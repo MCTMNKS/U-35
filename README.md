@@ -22,7 +22,8 @@ buraya oyundaki özelliklerimiz gelecek
 ## Hedef Kitle
 hedef kitlemizi buraya yazacağız.
 
-## Product backlog URL
+## Product Backlog URL
+https://oyunveuygulama.slack.com/lists/T02LKGXV98C/F079C4JNHG8
 
 
 ## Sprint 1
