@@ -9,13 +9,13 @@ Unity-35 Takımı
 * Medet Çınar - Developer
 * Mecit Menekşe - Developer
 
-## Oyun ismi
+## Oyun İsmi
 buraya oyun ismi gelicek.
 
-## Oyunun açıklaması
+## Oyunun Açıklaması
 buraya oyunun kısa bir özetini açıklayarak yazacağız.
 
-## Oyunun özellikleri
+## Oyunun Özellikleri
 buraya oyundaki özelliklerimiz gelecek
 
 
@@ -26,4 +26,14 @@ hedef kitlemizi buraya yazacağız.
 
 
 ## Sprint 1
-ilk sprint logumuzu buraya dolduracağız.
+## • Sprint Notları:
+## • Sprint İçinde Tamamlanması Tahmin Edilen Puan:
+## • Puan Tamamlama Mantığı:
+## • Backlog Düzeni ve Story Seçimleri: 
+## • Daily Scrum:
+## • Sprint Board Update:
+## • Ürün Durumu:
+## •Sprint Review:
+## •Sprint Retrospective:
+## •Diğer Notlar:
+
