@@ -43,7 +43,9 @@ Proje boyunca tamamlanması gereken backlog puanı 360'dır. İlk Sprint için b
 Backlogun slack platformu üzerinde hazırlanmasına karar verilmiştir. İlk sprint backlogu, ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur.
 ### • Daily Scrum: 
 Daily Scrum toplantılarının Discord platformu üzerinden yapılmasına karar verilmiştir. Takım üyeleri günlük olarak ilerlemelerini ana iletişim aracı olan Discord üzerinden #daily-scrum kanalı aracılığıyla yazılı olarak paylaşmıştır. ⁠
-Daily scrum notları şu dosya üzerinden incelenebilir: [Daily Scrum Meeting Notları - Sprint1](https://github.com/user-attachments/files/16120524/DailyScrumMeetingNotesSprint1.docx)
+
+Daily scrum notları şu dosya üzerinden incelenebilir: [Daily Scrum Meeting Notları - Sprint1](https://github.com/user-attachments/files/16120691/DailyScrumMeetingNotesSprint1.docx)
+
 
 ### • Sprint Board Update:
 Sprint board ekran görüntüleri:
