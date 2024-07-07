@@ -52,10 +52,7 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
 
 ### •Sprint Review:
 #### Katılımcılar:
-Mahmut Furkan Koçak
-Mecit Menekşe
-Medet Çınar
-Melis Karadağ
+Mahmut Furkan Koçak  Mecit Menekşe  Medet Çınar  Melis Karadağ
 
 #### Özet ve Alınan Kararlar:
 07/07/2024 tarihinde Discord platformu üzerinden iki haftalık ilk sprint’in değerlendirilmesi ve gözden geçirilmesi yapılmıştır. Sprint Review’da -aşağıda da detaylıca açıklanmış olan- tamamlanan işler, planlanan ve gerçekleşen karşılaştırılması, sprint esnasında karşılaşılan engeller, gelecek sprint için göz önünde bulundurulması gereken noktalar görüşülmüştür. Tamamlanamayan işlerin bir sonraki sprintte öncelik verilerek halledilmesi kararına varılmıştır.
