@@ -36,20 +36,34 @@ Echoes of Stormfell, ana karakterin kendini içinde bulduğu uzun bir maceraya o
 ### • Sprint Notları:
 User Story'ler slack platformu içinde oluşturulan "Product Backlog" listesinin içindeki gerekli görevlere eklenmiştir. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
 ### • Sprint İçinde Tamamlanması Tahmin Edilen Puan:
+Sprint içi puan değerlendirmesi 100 olarak belirlenmiştir.
 ### • Puan Tamamlama Mantığı:
-Backlogun slack platformu üzerinde hazırlanmasına karar verilmiştir. İlk sprint backlogu, ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur. Her user story'e yapılması istenen bir ana görev eklenmiştir. 
+Sprint içi puan değerlendirmesi 100 olarak belirlenmiştir.
+Puan tamamlama mantığı: Proje boyunca tamamlanması gereken backlog puanı 360'dır. İlk Sprint için bitirilmesi istenilen puan sayısı 100 olarak belirlenmiştir ancak bitirilen görevler kabul kriterlerini tam olarak karşılamadığı için puan 80 puana ulaşılmıştır. 
 ### • Backlog Düzeni ve Story Seçimleri: 
+Backlogun slack platformu üzerinde hazırlanmasına karar verilmiştir. İlk sprint backlogu, ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur.
 ### • Daily Scrum: 
 Daily Scrum toplantılarının Discord platformu üzerinden yapılmasına karar verilmiştir. Takım üyeleri günlük olarak ilerlemelerini ana iletişim aracı olan Discord üzerinden #daily-scrum kanalı aracılığıyla yazılı olarak paylaşmıştır. ⁠
 Daily scrum notları şu dosya üzerinden incelenebilir: [Daily Scrum Meeting Notları - Sprint1](https://github.com/user-attachments/files/16120524/DailyScrumMeetingNotesSprint1.docx)
 
 ### • Sprint Board Update:
+Sprint board ekran görüntüleri:
+![pb1](https://github.com/MCTMNKS/U-35/assets/125589639/f2f7db24-5ef2-4a9b-893a-e9dc6e2c6e4f)
+![pb2](https://github.com/MCTMNKS/U-35/assets/125589639/02a932fb-c293-4ee4-b6fe-89ad6f68b11d)
+
+
+
 ### • Ürün Durumu:
 Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda paylaşılan ekran görüntüleri ve video linkleri ile gösterilmiştir.
+
 [Tutorial Seviyesi](https://youtu.be/LwMbqL-DtPc)
+
 [Karakter Mekaniği ve Animasyonları](https://youtu.be/DgMndzF2i0I) (Animasyon taslağı hem Unity'nin kendi asset'inde hem de takım tarafından -Mecit- oluşturulan mekanik üzerine taslak olarak entegre edilmiştir.)
+
 [Sahneden Görüntüler](https://cdn.discordapp.com/attachments/1252713120598851727/1259315391814172722/Desktop_2024.07.07_-_03.58.47.01.mp4?ex=668be51a&is=668a939a&hm=dfd9e51f66ca1c3ff2467895969b8fee74d285344eb47ab6185a5a80dbc55f9e&)
+
 ![image](https://github.com/MCTMNKS/U-35/assets/125589639/d2b7c97c-0023-4404-9e72-b8efe0dea499)
+<img width="737" alt="Interact" src="https://github.com/MCTMNKS/U-35/assets/125589639/376ed0c7-448c-4a99-8879-a12ef9eb3ef9">
 
 
 
