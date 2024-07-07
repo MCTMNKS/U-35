@@ -53,8 +53,11 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
 ### •Sprint Review:
 #### Katılımcılar:
 Mahmut Furkan Koçak
+
 Mecit Menekşe
+
 Medet Çınar
+
 Melis Karadağ
 
 #### Özet ve Alınan Kararlar:
@@ -62,20 +65,20 @@ Melis Karadağ
 
 #### Tamamlanan İşler: 
 Oyunun senaryosuna karar verildi. Kullanıcı hikayeleri, Slack platformunda yer alan görevlerin içine eklendi. Bu dokümantasyonda tamamlanan görevler belirtilecek. Bu sprintte en başta yapılması planlanan: 
-•	Ana karakter modelinin dizaynı
-•	NPC diyalog sistemi
-•	Tutorial seviyesi ve köy
-•	Köy seviyesi
-•	Hareket mekaniği ve animasyonları (temel)
-•	Grab mekaniği (Sonradan eklendi.)
-•	Platformer hareket mekaniği (Sonradan eklendi.)
+-Ana karakter modelinin dizaynı
+-NPC diyalog sistemi
+-Tutorial seviyesi ve köy
+-Köy seviyesi
+-Hareket mekaniği ve animasyonları (temel)
+-Grab mekaniği (Sonradan eklendi.)
+-Platformer hareket mekaniği (Sonradan eklendi.)
 görevleri tamamlandı ya da bir kısmı tamamlandı.
 Bahsi geçen tamamlanan işlerin, Product Owner’ın kabul kriterlerine göre durumu şu şekildedir:
--	Ana karakter modeli kabul kriterlerine göre yeterli. Karakterin rigi iyi çalışıyor. Karakterin kollarının bükülürken düzleşme sorunu vardı ancak düzeltildi. 
--	Diyalog sistemi ile ilgili Medet takım arkadaşımız takımı güncelleyecektir. Son yazdığı kodu revize etmesi gerekmektedir. 
--	Tutorial seviyesi ve köyün kabul kriterlerine göre çok eksiği var. Fikir ve taslak olarak oturdu ancak oynanış olarak eksik. 
--	Hareket mekaniği ve platformer mekaniği kinematik asset üzerine koyarak gitmeyi ve sıfırdan oluşturmayı denendi. Kinematik karakter asseti mekaniklerinde koşma ve zıplama vardı, test amaçlı sprint, çift zıplama ve dash eklendi. Stamina var. Kabul kriterlerine göre yeterince test edilmediği için hepsini karşılamadı. Hepsini birleştirip test etmeye (animasyonlu hali) vakit olmadı. 
--	Grab mekaniği genel olarak sorunsuz çalışmakta. Kinematik asset karakterinin kamerası ile entegre edildi. İyi çalışıyor ancak kabul kriterlerine göre yeterince mükemmel değil.
+--Ana karakter modeli kabul kriterlerine göre yeterli. Karakterin rigi iyi çalışıyor. Karakterin kollarının bükülürken düzleşme sorunu vardı ancak düzeltildi. 
+--Diyalog sistemi ile ilgili Medet takım arkadaşımız takımı güncelleyecektir. Son yazdığı kodu revize etmesi gerekmektedir. 
+--Tutorial seviyesi ve köyün kabul kriterlerine göre çok eksiği var. Fikir ve taslak olarak oturdu ancak oynanış olarak eksik. 
+--Hareket mekaniği ve platformer mekaniği kinematik asset üzerine koyarak gitmeyi ve sıfırdan oluşturmayı denendi. Kinematik karakter asseti mekaniklerinde koşma ve zıplama vardı, test amaçlı sprint, çift zıplama ve dash eklendi. Stamina var. Kabul kriterlerine göre yeterince test edilmediği için hepsini karşılamadı. Hepsini birleştirip test etmeye (animasyonlu hali) vakit olmadı. 
+--Grab mekaniği genel olarak sorunsuz çalışmakta. Kinematik asset karakterinin kamerası ile entegre edildi. İyi çalışıyor ancak kabul kriterlerine göre yeterince mükemmel değil.
   
 #### Gösterim:
 Sprint esnasında takım üyeleri; Discord platformu aracılığıyla, takım toplantılarında ve Sprint Review esnasında diğer takım üyelerini oyunun güncel durumları ile alakalı bilgilendirmiştir. Sprint sonunda oyunun güncel durumu, ilgili alt başlık altında -aşağıda- ekran görüntüleri ile yer almaktadır. 
@@ -87,7 +90,7 @@ Sprint esnasında, bazı görevlerin tamamlanması esnasında çeşitli engeller
 
 -Diyalog sistemini kurulurken UI ile alakalı sıkıntılar yaşandı ve diyalog kutucuğunun ekranın çözünürlüğü ile büyüyüp küçülmesi oyunun genel görüntüsüne uygun olmayan bir durum yarattı. Bu engellerden ikincisi “scale with screen size” ile çözülürken, ilkindeki sorun bir sonraki sprint’e atanmıştır. (Problemin çözülememesi durumunda ise farklı bir diyalog sistemi kullanılması kararına varıldı.)
 
-- Oyun senaryosunun kurulması esnasında fikirlerin ortak noktasını bulmak, tamamlayıcı ve tutarlı olmasını sağlamak zor oldu. Oyun senaryosunun netleştirilmesinin uzun süre alması dolayısıyla oyun üzerinde çalışılmaya geç başlanabildi. Kararlaştırılan senaryonun birkaç kere değiştirilmesi sebebiyle ise gerçekleştirilen bazı ilerlemeler yenileriyle değiştirilmek zorunda kalındı. Örneğin karakter modeli yapılmıştı fakat yeni hikaye ile uyumlu bir karakter değildi. Bu durum vakit kaybına yol açtı.
+-Oyun senaryosunun kurulması esnasında fikirlerin ortak noktasını bulmak, tamamlayıcı ve tutarlı olmasını sağlamak zor oldu. Oyun senaryosunun netleştirilmesinin uzun süre alması dolayısıyla oyun üzerinde çalışılmaya geç başlanabildi. Kararlaştırılan senaryonun birkaç kere değiştirilmesi sebebiyle ise gerçekleştirilen bazı ilerlemeler yenileriyle değiştirilmek zorunda kalındı. Örneğin karakter modeli yapılmıştı fakat yeni hikaye ile uyumlu bir karakter değildi. Bu durum vakit kaybına yol açtı.
 
 #### Gelecek Sprint İçin: 
 Gelecek sprint için mevcut görevlerin kısa bir sürede temize çekilip birleştirilmesi ve sonraki seviyelerin (dağ ve tünel) dizayn edilmesi öne çıkan işlerdir. Bir sonraki sprint için karakter mekaniklerinin senaryoya göre çeşitlendirilmesi, animasyonların kalan hareket mekanikleri (yürüme hariç) için karaktere entegresi, ilk seviye tasarımının son haline getirilmesi, bu sprint’te karşılaşılan diyalog sistemi-UI sorunun çözülmesi öne çıkmaktadır. 
@@ -97,12 +100,12 @@ Product owner tarafından sağlanan geri bildirime göre seviye tasarımı göre
 
 ### •Sprint Retrospective:
 #### İyi Gidenler:
-- Sprint’te tamamlanması gereken işlerin büyük çoğunluğu tamamlandı. 
-- Tüm takım üyeleriyle aktif iletişime geçilebildi. 
+-Sprint’te tamamlanması gereken işlerin büyük çoğunluğu tamamlandı. 
+-Tüm takım üyeleriyle aktif iletişime geçilebildi. 
 
 #### Olumsuz Gidenler:
-- Takım içi İletişim kopuklukları yaşandı. 
-- Takım toplantıları düzensiz gerçekleştirildi. Sıklık olarak yetersizdi. 
+-Takım içi İletişim kopuklukları yaşandı. 
+-Takım toplantıları düzensiz gerçekleştirildi. Sıklık olarak yetersizdi. 
 
 #### İyileştirilecekler:
 -Sprint planning esnasında daha net ve takım üyelerinin yeteneklerine uygun iş bölümü yapılacaktır. 
