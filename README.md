@@ -53,11 +53,8 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
 ### •Sprint Review:
 #### Katılımcılar:
 Mahmut Furkan Koçak
-
 Mecit Menekşe
-
 Medet Çınar
-
 Melis Karadağ
 
 #### Özet ve Alınan Kararlar:
