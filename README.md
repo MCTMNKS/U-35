@@ -134,6 +134,6 @@ Product owner tarafından sağlanan geri bildirime göre seviye tasarımı göre
   - Esneklik payı bırakmaya önem verilecektir. 
   - Takım üyelerinin ayrı ayrı tamamladığı oyun bölümleri birleştirilirken daha verimli olunacaktır. 
 
-### •Diğer Notlar:
-N/A
+### Diğer Notlar:
+Zaman problemi sebebiyle oyunun tamamlanan görevlerinin bir kısmı GitHub'a henüz pushlanmamıştır.
 
