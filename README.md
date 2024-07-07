@@ -47,6 +47,9 @@ Daily scrum notları şu dosya üzerinden incelenebilir: [Daily Scrum Meeting No
 ### • Ürün Durumu:
 Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda paylaşılan ekran görüntüleri ve video linkleri ile gösterilmiştir.
 [Tutorial Seviyesi](https://youtu.be/LwMbqL-DtPc)
+[Karakter Mekaniği ve Animasyonları](https://youtu.be/DgMndzF2i0I) (Animasyon taslağı hem Unity'nin kendi asset'inde hem de takım tarafından -Mecit- oluşturulan mekanik üzerine taslak olarak entegre edilmiştir.)
+[Sahneden Görüntüler](https://cdn.discordapp.com/attachments/1252713120598851727/1259315391814172722/Desktop_2024.07.07_-_03.58.47.01.mp4?ex=668be51a&is=668a939a&hm=dfd9e51f66ca1c3ff2467895969b8fee74d285344eb47ab6185a5a80dbc55f9e&)
+![image](https://github.com/MCTMNKS/U-35/assets/125589639/d2b7c97c-0023-4404-9e72-b8efe0dea499)
 
 
 
