@@ -10,17 +10,23 @@ Unity-35 Takımı
 * Mecit Menekşe - Developer
 
 ## Oyun İsmi
-buraya oyun ismi gelicek.
+Echoes of Stormfell (kesin değil)
 
 ## Oyunun Açıklaması
-buraya oyunun kısa bir özetini açıklayarak yazacağız.
+Echoes of Stormfell, ana karakterin kendini içinde bulduğu uzun bir maceraya oyuncumuzun eşlik ettiği bir 3D, üçüncü şahıs platformer/aksiyon oyunudur.
 
 ## Oyunun Özellikleri
-buraya oyundaki özelliklerimiz gelecek
-
+* Macera
+* Low Poly
+* Platformer
+* Aksiyon
+* Low poly
 
 ## Hedef Kitle
-hedef kitlemizi buraya yazacağız.
+* Casual game (tatlı grafikler, basitlik, kısa süreli oynanış)
+* Macera oyunu sevenler
+* PC oyuncuları
+* 12+
 
 ## Product Backlog URL
 [Slack Product Backlog](https://oyunveuygulama.slack.com/lists/T02LKGXV98C/F079C4JNHG8)
