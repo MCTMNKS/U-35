@@ -44,7 +44,8 @@ Backlogun slack platformu üzerinde hazırlanmasına karar verilmiştir. İlk sp
 ### • Daily Scrum: 
 Daily Scrum toplantılarının Discord platformu üzerinden yapılmasına karar verilmiştir. Takım üyeleri günlük olarak ilerlemelerini ana iletişim aracı olan Discord üzerinden #daily-scrum kanalı aracılığıyla yazılı olarak paylaşmıştır. ⁠
 
-Daily scrum notları şu dosya üzerinden incelenebilir: [Daily Scrum Meeting Notları - Sprint1](https://github.com/user-attachments/files/16120691/DailyScrumMeetingNotesSprint1.docx)
+Daily scrum notları şu dosya üzerinden incelenebilir: [Daily Scrum Meeting Notları - Sprint1](https://github.com/user-attachments/files/16120693/DailyScrumMeetingNotesSprint1.docx)
+
 
 
 ### • Sprint Board Update:
