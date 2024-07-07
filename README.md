@@ -62,13 +62,13 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
 
 #### Tamamlanan İşler: 
 Oyunun senaryosuna karar verildi. Kullanıcı hikayeleri, Slack platformunda yer alan görevlerin içine eklendi. Bu dokümantasyonda tamamlanan görevler belirtilecek. Bu sprintte en başta yapılması planlanan 
-   - Ana karakter modelinin dizaynı
-   - NPC diyalog sistemi
-   - Tutorial seviyesi ve köy
-   - Köy seviyesi
-   - Hareket mekaniği ve animasyonları (temel)
-   - Grab mekaniği (Sonradan eklendi.)
-   - Platformer hareket mekaniği (Sonradan eklendi.)
+   -- Ana karakter modelinin dizaynı
+   -- NPC diyalog sistemi
+   -- Tutorial seviyesi ve köy
+   -- Köy seviyesi
+   -- Hareket mekaniği ve animasyonları (temel)
+   -- Grab mekaniği (Sonradan eklendi.)
+   -- Platformer hareket mekaniği (Sonradan eklendi.)
      
 görevleri tamamlandı ya da bir kısmı tamamlandı.
 
@@ -93,9 +93,8 @@ Kişisel yoğunluklar ve karşılaşılan teknik engeller gibi sebepler sonucu v
 #### Engeller: 
 Sprint esnasında, bazı görevlerin tamamlanması esnasında çeşitli engellerle karşılaşılmıştır ve aşağıda listelenen durumlar yaşanmıştır.
 
- -Diyalog sistemini kurulurken UI ile alakalı sıkıntılar yaşandı ve diyalog kutucuğunun ekranın çözünürlüğü ile büyüyüp küçülmesi oyunun genel görüntüsüne uygun olmayan bir durum yarattı. Bu engellerden ikincisi “scale with screen size” ile çözülürken, ilkindeki sorun bir sonraki sprint’e atanmıştır. (Problemin çözülememesi durumunda ise farklı bir diyalog sistemi kullanılması kararına varıldı.)
-
- -Oyun senaryosunun kurulması esnasında fikirlerin ortak noktasını bulmak, tamamlayıcı ve tutarlı olmasını sağlamak zor oldu. Oyun senaryosunun netleştirilmesinin uzun süre alması dolayısıyla oyun üzerinde çalışılmaya geç başlanabildi. Kararlaştırılan senaryonun birkaç kere değiştirilmesi sebebiyle ise gerçekleştirilen bazı ilerlemeler yenileriyle değiştirilmek zorunda kalındı. Örneğin karakter modeli yapılmıştı fakat yeni hikaye ile uyumlu bir karakter değildi. Bu durum vakit kaybına yol açtı.
+ -- Diyalog sistemini kurulurken UI ile alakalı sıkıntılar yaşandı ve diyalog kutucuğunun ekranın çözünürlüğü ile büyüyüp küçülmesi oyunun genel görüntüsüne uygun olmayan bir durum yarattı. Bu engellerden ikincisi “scale with screen size” ile çözülürken, ilkindeki sorun bir sonraki sprint’e atanmıştır. (Problemin çözülememesi durumunda ise farklı bir diyalog sistemi kullanılması kararına varıldı.)
+ -- Oyun senaryosunun kurulması esnasında fikirlerin ortak noktasını bulmak, tamamlayıcı ve tutarlı olmasını sağlamak zor oldu. Oyun senaryosunun netleştirilmesinin uzun süre alması dolayısıyla oyun üzerinde çalışılmaya geç başlanabildi. Kararlaştırılan senaryonun birkaç kere değiştirilmesi sebebiyle ise gerçekleştirilen bazı ilerlemeler yenileriyle değiştirilmek zorunda kalındı. Örneğin karakter modeli yapılmıştı fakat yeni hikaye ile uyumlu bir karakter değildi. Bu durum vakit kaybına yol açtı.
 
 #### Gelecek Sprint İçin: 
 Gelecek sprint için mevcut görevlerin kısa bir sürede temize çekilip birleştirilmesi ve sonraki seviyelerin (dağ ve tünel) dizayn edilmesi öne çıkan işlerdir. Bir sonraki sprint için karakter mekaniklerinin senaryoya göre çeşitlendirilmesi, animasyonların kalan hareket mekanikleri (yürüme hariç) için karaktere entegresi, ilk seviye tasarımının son haline getirilmesi, bu sprint’te karşılaşılan diyalog sistemi-UI sorunun çözülmesi öne çıkmaktadır. 
@@ -105,19 +104,19 @@ Product owner tarafından sağlanan geri bildirime göre seviye tasarımı göre
 
 ### •Sprint Retrospective:
 #### İyi Gidenler:
-  - Sprint’te tamamlanması gereken işlerin büyük çoğunluğu tamamlandı. 
-  - Tüm takım üyeleriyle aktif iletişime geçilebildi. 
+  -- Sprint’te tamamlanması gereken işlerin büyük çoğunluğu tamamlandı. 
+  -- Tüm takım üyeleriyle aktif iletişime geçilebildi. 
 
 #### Olumsuz Gidenler:
-  - Takım içi İletişim kopuklukları yaşandı. 
-  - Takım toplantıları düzensiz gerçekleştirildi. Sıklık olarak yetersizdi. 
+  -- Takım içi İletişim kopuklukları yaşandı. 
+  -- Takım toplantıları düzensiz gerçekleştirildi. Sıklık olarak yetersizdi. 
 
 #### İyileştirilecekler:
-  - Sprint planning esnasında daha net ve takım üyelerinin yeteneklerine uygun iş bölümü yapılacaktır. 
-  - Takım toplantıları daha düzenli ve sık gerçekleştirilecektir.  
-  - Takım çalışması ve takım içi iletişim iyileştirilecektir. 
-  - Esneklik payı bırakmaya önem verilecektir. 
-  - Takım üyelerinin ayrı ayrı tamamladığı oyun bölümleri birleştirilirken daha verimli olunacaktır. 
+  -- Sprint planning esnasında daha net ve takım üyelerinin yeteneklerine uygun iş bölümü yapılacaktır. 
+  -- Takım toplantıları daha düzenli ve sık gerçekleştirilecektir.  
+  -- Takım çalışması ve takım içi iletişim iyileştirilecektir. 
+  -- Esneklik payı bırakmaya önem verilecektir. 
+  -- Takım üyelerinin ayrı ayrı tamamladığı oyun bölümleri birleştirilirken daha verimli olunacaktır. 
 
 ### •Diğer Notlar:
 N/A
