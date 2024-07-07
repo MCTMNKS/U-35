@@ -63,17 +63,11 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
 #### Tamamlanan İşler: 
 Oyunun senaryosuna karar verildi. Kullanıcı hikayeleri, Slack platformunda yer alan görevlerin içine eklendi. Bu dokümantasyonda tamamlanan görevler belirtilecek. Bu sprintte en başta yapılması planlanan: 
  -Ana karakter modelinin dizaynı
- 
  -NPC diyalog sistemi
- 
  -Tutorial seviyesi ve köy
- 
  -Köy seviyesi
- 
  -Hareket mekaniği ve animasyonları (temel)
- 
  -Grab mekaniği (Sonradan eklendi.)
- 
  -Platformer hareket mekaniği (Sonradan eklendi.)
 görevleri tamamlandı ya da bir kısmı tamamlandı.
 
