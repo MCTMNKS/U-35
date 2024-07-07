@@ -63,18 +63,30 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
 #### Tamamlanan İşler: 
 Oyunun senaryosuna karar verildi. Kullanıcı hikayeleri, Slack platformunda yer alan görevlerin içine eklendi. Bu dokümantasyonda tamamlanan görevler belirtilecek. Bu sprintte en başta yapılması planlanan: 
  -Ana karakter modelinin dizaynı
+ 
  -NPC diyalog sistemi
+ 
  -Tutorial seviyesi ve köy
+ 
  -Köy seviyesi
+ 
  -Hareket mekaniği ve animasyonları (temel)
+ 
  -Grab mekaniği (Sonradan eklendi.)
+ 
  -Platformer hareket mekaniği (Sonradan eklendi.)
 görevleri tamamlandı ya da bir kısmı tamamlandı.
+
 Bahsi geçen tamamlanan işlerin, Product Owner’ın kabul kriterlerine göre durumu şu şekildedir:
+ 
  --Ana karakter modeli kabul kriterlerine göre yeterli. Karakterin rigi iyi çalışıyor. Karakterin kollarının bükülürken düzleşme sorunu vardı ancak düzeltildi. 
+ 
  --Diyalog sistemi ile ilgili Medet takım arkadaşımız takımı güncelleyecektir. Son yazdığı kodu revize etmesi gerekmektedir. 
+ 
  --Tutorial seviyesi ve köyün kabul kriterlerine göre çok eksiği var. Fikir ve taslak olarak oturdu ancak oynanış olarak eksik. 
+ 
  --Hareket mekaniği ve platformer mekaniği kinematik asset üzerine koyarak gitmeyi ve sıfırdan oluşturmayı denendi. Kinematik karakter asseti mekaniklerinde koşma ve zıplama vardı, test amaçlı sprint, çift zıplama ve dash eklendi. Stamina var. Kabul kriterlerine göre yeterince test edilmediği için hepsini karşılamadı. Hepsini birleştirip test etmeye (animasyonlu hali) vakit olmadı. 
+ 
  --Grab mekaniği genel olarak sorunsuz çalışmakta. Kinematik asset karakterinin kamerası ile entegre edildi. İyi çalışıyor ancak kabul kriterlerine göre yeterince mükemmel değil.
   
 #### Gösterim:
