@@ -69,6 +69,11 @@ namespace KinematicCharacterController.Examples
 #if UNITY_WEBGL
         scrollInput = 0f;
 #endif
+            // If the camera is in first-person mode, ignore scroll input
+            if (CharacterCamera.TargetDistance == 0f)
+            {
+                scrollInput = 0f;
+            }
 
             // Apply inputs to the camera
             CharacterCamera.UpdateWithInput(Time.deltaTime, scrollInput, lookInputVector);
@@ -91,6 +96,7 @@ namespace KinematicCharacterController.Examples
             characterInputs.JumpDown = Input.GetKeyDown(KeyCode.Space);
             characterInputs.CrouchDown = Input.GetKeyDown(KeyCode.C);
             characterInputs.CrouchUp = Input.GetKeyUp(KeyCode.C);
+            characterInputs.Sprint = Input.GetKey(KeyCode.LeftShift);
 
             // Apply inputs to character
             Character.SetInputs(ref characterInputs);

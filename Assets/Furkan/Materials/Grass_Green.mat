@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Grass_Green
-  m_Shader: {fileID: 4800000, guid: 72e68f904ae08fc4299172cfb53712c6, type: 3}
+  m_Shader: {fileID: 4800000, guid: 1f070adac363e70489cde0922a447a08, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -114,13 +114,13 @@ Material:
     - _BladeForward: 0.38
     - _BladeHeight: 0.25
     - _BladeHeightDelta: 0.05
-    - _BladeHeightMax: 1.25
-    - _BladeHeightMin: 0.75
-    - _BladeSegments: 3
+    - _BladeHeightMax: 0
+    - _BladeHeightMin: 0.31
+    - _BladeSegments: 3.01
     - _BladeWidth: 0.015
     - _BladeWidthDelta: 0.02
-    - _BladeWidthMax: 0.05
-    - _BladeWidthMin: 0.02
+    - _BladeWidthMax: 0.0186
+    - _BladeWidthMin: 0.0282
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0

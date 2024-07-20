@@ -12,7 +12,10 @@ public class DialogueUIController : MonoBehaviour
 
     [SerializeField] private AudioSource NPCaudio;
 
-    [SerializeField] private float typeSpeed = 10f;
+    [SerializeField] private float typeSpeed = 20f;
+
+    [SerializeField] private float fadeInTime = 1.0f; // Fade in duration (copilot)
+    [SerializeField] private float fadeOutTime = 1.0f; // Fade out duration (copilot)
 
 
     private Queue<string> paragraphs = new Queue<string>();
@@ -24,12 +27,20 @@ public class DialogueUIController : MonoBehaviour
 
     private Coroutine typeDiaologueCO;
 
+    private CanvasGroup canvasGroup; // CanvasGroup component (copilot)
+
+    void Start()
+    {
+        canvasGroup = GameObject.Find("DialogueBoxImage").GetComponent<CanvasGroup>(); // Get the CanvasGroup component from the DialogueBoxImage game object
+        canvasGroup.alpha = 0; // Set the alpha to 0 to make the canvas invisible at the start
+    }
 
 
 
     public void displayNextParagraph(DialogueText dialogueText)
     {
-        
+        // Fade in when the dialogue starts (copilot)
+        StartCoroutine(FadeCanvasGroup(canvasGroup, canvasGroup.alpha, 1, fadeInTime));
 
         //if there is nothing in the queue
         if (paragraphs.Count == 0)
@@ -76,7 +87,11 @@ public class DialogueUIController : MonoBehaviour
             conversationEnded = true;
         }
 
-
+        // Fade out when the dialogue ends (copilot)
+        if (conversationEnded && !isTyping)
+        {
+            StartCoroutine(FadeCanvasGroup(canvasGroup, canvasGroup.alpha, 0, fadeOutTime));
+        }
 
     }
 
@@ -150,6 +165,25 @@ public class DialogueUIController : MonoBehaviour
 
     }
 
+    private IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end, float lerpTime = 1) //copilot
+    {
+        float _timeStartedLerping = Time.time;
+        float timeSinceStarted = Time.time - _timeStartedLerping;
+        float percentageComplete = timeSinceStarted / lerpTime;
 
+        while (true)
+        {
+            timeSinceStarted = Time.time - _timeStartedLerping;
+            percentageComplete = timeSinceStarted / lerpTime;
+
+            float currentValue = Mathf.Lerp(start, end, percentageComplete);
+
+            cg.alpha = currentValue;
+
+            if (percentageComplete >= 1) break;
+
+            yield return new WaitForEndOfFrame();
+        }
+    }
 }
 

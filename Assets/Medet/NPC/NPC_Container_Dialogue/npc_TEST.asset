@@ -12,10 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f427266443dd94264a4bbf81ec0c4329, type: 3}
   m_Name: npc_TEST
   m_EditorClassIdentifier: 
-  speakerName: Chad_NPC
-  npcPortrait: {fileID: 21300000, guid: 4963d2dfd0cb842fa89528e24580da90, type: 3}
-  dialougueSound: {fileID: 0}
+  speakerName: Bastion
+  npcPortrait: {fileID: 21300000, guid: 5f037b27f075f18498e37a80e776173f, type: 3}
+  dialougueSound: {fileID: 8300000, guid: f52f8d3a627c7304fb55034f798266ba, type: 3}
   paragpraphs:
-  - "Ben bir npcyim ve konu\u015Fabiliyorum!"
-  - YEAHHHHH
-  - "\u0130\u015ETE BU BE!"
+  - '... Atlas, look at you! You''ve changed so much, couldn''t even recognize you
+    for a second there. '
+  - 'I take that ship of yours couldn''t handle that big storm i saw out there in
+    the ocean. '
+  - You can use the old village road, starts right back at where your ship crashed.
+    You might need to jump around a bit, get across the river.
+  - 'Also, you can just use one of these logs i was cutting earlier to make a bridge
+    up there, path leading up at right.. Just hold your LEFT MOUSE BUTTON while you''re
+    looking at it in first person mode. '
+  - 

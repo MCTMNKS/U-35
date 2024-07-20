@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427266443dd94264a4bbf81ec0c4329, type: 3}
+  m_Name: npc_TEST 1
+  m_EditorClassIdentifier: 
+  speakerName: Chad_NPC
+  npcPortrait: {fileID: 21300000, guid: 4963d2dfd0cb842fa89528e24580da90, type: 3}
+  dialougueSound: {fileID: 0}
+  paragpraphs:
+  - Call me giganiga chad ball ultimate2000
+  - The storm took out the old bridge. You're gonna have to jump around to get back
+    to the village, i heard some noise and flashes when the storm happened, try to
+    be fast.
+  - If you want to, you could try making a bridge with these lodges. Try pressing
+    LEFT MOUSE BUTTON when you are in the first person mode. (Press Right Mouse Button
+    for first person)

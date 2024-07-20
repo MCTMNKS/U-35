@@ -13,6 +13,7 @@ public class FallingPlatform : MonoBehaviour
     private Vector3 originalPosition;
     private Rigidbody rb;
     private Material material;
+    private Color originalColor; // Original base color
     private Color originalEmissionColor; // Original emission color
 
     void Start()
@@ -20,12 +21,13 @@ public class FallingPlatform : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         material = GetComponent<Renderer>().material;
         originalPosition = transform.position;
+        originalColor = material.GetColor("_BaseColor"); // Store the original base color
         originalEmissionColor = material.GetColor("_EmissionColor"); // Store the original emission color
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Character"))
+        if (other.gameObject.CompareTag("ExampleCharacter"))
         {
             material.SetColor("_BaseColor", steppedOnColor);
             material.SetColor("_EmissionColor", steppedOnEmissionColor); // Change the emission color
@@ -59,7 +61,7 @@ public class FallingPlatform : MonoBehaviour
 
         rb.isKinematic = true;
         transform.position = originalPosition;
-        material.SetColor("_BaseColor", Color.blue);
+        material.SetColor("_BaseColor", originalColor); // Reset the base color
         material.SetColor("_EmissionColor", originalEmissionColor); // Reset the emission color
     }
 }

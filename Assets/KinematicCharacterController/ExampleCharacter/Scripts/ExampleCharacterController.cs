@@ -25,6 +25,7 @@ namespace KinematicCharacterController.Examples
         public bool JumpDown;
         public bool CrouchDown;
         public bool CrouchUp;
+        public bool Sprint; // Sprinting mechanic added
     }
 
     public struct AICharacterInputs
@@ -62,6 +63,14 @@ namespace KinematicCharacterController.Examples
         public float JumpPreGroundingGraceTime = 0f;
         public float JumpPostGroundingGraceTime = 0f;
 
+        [Header("Wall Interaction")]
+        public bool isTouchingWall = false;
+        public bool isWallStickActive = false;
+        public float wallStickTimer = 0f;
+        public float wallStickDuration = 5f; // The character will stick to the wall for 5 seconds
+        public float climbingSpeed = 5f; // The speed at which the character climbs the wall
+        public float jumpForce = 5f; // Adjust this value as needed
+
         [Header("Misc")]
         public List<Collider> IgnoredColliders = new List<Collider>();
         public BonusOrientationMethod BonusOrientationMethod = BonusOrientationMethod.None;
@@ -85,10 +94,60 @@ namespace KinematicCharacterController.Examples
         private Vector3 _internalVelocityAdd = Vector3.zero;
         private bool _shouldBeCrouching = false;
         private bool _isCrouching = false;
+        private bool _isSprinting = false; // For storing sprinting state
+        private Animator animator; // For animator state
+        private int _animIDJump;
+        private int _animIDFreeFall;
+        public ParticleSystem crouchParticleEffect;
+        private Vector3 originalCharacterScale;
+        private Vector3 originalCapsuleDimensions;
+
+
+
+        // For scaling the mesh when crouching
+        private IEnumerator ScaleOverTime(Transform target, Vector3 targetScale, float duration)
+        {
+            Vector3 initialScale = target.localScale;
+            float time = 0;
+
+            while (time < duration)
+            {
+                target.localScale = Vector3.Lerp(initialScale, targetScale, time / duration);
+                time += Time.deltaTime;
+                yield return null;
+            }
+
+            target.localScale = targetScale;
+
+            // Calculate the ratio of the new scale to the original scale
+            Vector3 scaleRatio = new Vector3(
+                target.localScale.x / originalCharacterScale.x,
+                target.localScale.y / originalCharacterScale.y,
+                target.localScale.z / originalCharacterScale.z
+            );
+
+            // Adjust the capsule dimensions based on the scale ratio
+            Vector3 newCapsuleDimensions = new Vector3(
+                originalCapsuleDimensions.x * scaleRatio.x,
+                originalCapsuleDimensions.y * scaleRatio.y,
+                originalCapsuleDimensions.z * scaleRatio.z
+            );
+
+            Motor.SetCapsuleDimensions(newCapsuleDimensions.x, newCapsuleDimensions.y, newCapsuleDimensions.z);
+        }
+
 
         private Vector3 lastInnerNormal = Vector3.zero;
         private Vector3 lastOuterNormal = Vector3.zero;
+        private void Start()
+        {
+            // Store the original scale of the character and the capsule dimensions
+            originalCharacterScale = MeshRoot.localScale;
+            originalCapsuleDimensions = new Vector3(0.4f, 3f, 1.5f);
+            _animIDJump = Animator.StringToHash("IsJumping");
+            _animIDFreeFall = Animator.StringToHash("IsFreeFalling");
 
+        }
         private void Awake()
         {
             // Handle initial state
@@ -96,12 +155,143 @@ namespace KinematicCharacterController.Examples
 
             // Assign the characterController to the motor
             Motor.CharacterController = this;
+
+            animator = GetComponent<Animator>(); // Handle Animator
         }
 
-        /// <summary>
-        /// Handles movement state transitions and enter/exit callbacks
-        /// </summary>
-        public void TransitionToState(CharacterState newState)
+        // Animator states and interpolation (smooth transition between states)
+        private void Update()
+        {
+            // Cast a ray from the character's position in the direction they are facing
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, transform.forward, out hit, 1f))
+            {
+                // If the ray hits a wall, set isTouchingWall to true
+                if (hit.collider.CompareTag("Wall"))
+                {
+                    isTouchingWall = true;
+                }
+                else
+                {
+                    isTouchingWall = false;
+                }
+            }
+            else
+            {
+                isTouchingWall = false;
+            }
+        
+        // Calculate the target speed as a percentage of the max speed
+        float targetSpeedPercent = _moveInputVector.magnitude / MaxStableMoveSpeed;
+
+            // Increase targetSpeedPercent when sprinting and character is moving
+            if (_isSprinting && _moveInputVector.sqrMagnitude > 0)
+            {
+                targetSpeedPercent = 10f; // Or any value greater than the threshold for running
+            }
+
+            // Get the current speed percent from the animator
+            float currentSpeedPercent = animator.GetFloat("Speed");
+
+            // Define a speed at which the character changes its speed
+            float speedIncreaseRate = 10f; // Adjust this value as needed
+            float speedDecreaseRate = 5f; // Adjust this value as needed
+
+            // If targetSpeedPercent is less than a small threshold, set it directly to zero
+            if (targetSpeedPercent < 0.1f)
+            {
+                animator.SetFloat("Speed", 0f);
+            }
+            else
+            {
+                // If targetSpeedPercent is less than current speed, use speedDecreaseRate, else use speedIncreaseRate
+                float speedChangeRate = targetSpeedPercent < currentSpeedPercent ? speedDecreaseRate : speedIncreaseRate;
+
+                // Smoothly interpolate between the current and target speed percent
+                float smoothedSpeedPercent = Mathf.Lerp(currentSpeedPercent, targetSpeedPercent, Time.deltaTime * speedChangeRate);
+
+                // Set the "Speed" parameter in the Animator
+                animator.SetFloat("Speed", smoothedSpeedPercent);
+            }
+        }
+
+        private IEnumerator PlayParticleEffect(ParticleSystem particleEffect, float duration)
+        {
+            particleEffect.Play();
+
+            yield return new WaitForSeconds(duration);
+
+            particleEffect.Stop();
+        }
+
+        void HandleWallStick()
+        {
+            if (isTouchingWall && Input.GetKeyDown(KeyCode.F))
+            {
+                isWallStickActive = true;
+                wallStickTimer = wallStickDuration;
+            }
+
+            if (isWallStickActive)
+            {
+                // Allow the character to move upwards
+                if (Input.GetKey(KeyCode.W))
+                {
+                    _moveInputVector.y = 1;
+                }
+                else
+                {
+                    _moveInputVector.y = 0;
+                }
+
+                // Cast a ray from the character's position upwards
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, transform.up, out hit, 1f))
+                {
+                    // If the ray hits the wall, stop the upward movement
+                    if (hit.collider.CompareTag("Wall"))
+                    {
+                        isWallStickActive = false;
+                        _internalVelocityAdd = Vector3.zero; // Reset the internal velocity add
+                    }
+                }
+
+                // If the space key is pressed, exit the wall sticking state and prepare to jump
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    isWallStickActive = false;
+                    _jumpRequested = true;
+                }
+
+                // Decrease the timer and deactivate wall stick if time is up
+                wallStickTimer -= Time.deltaTime;
+                if (wallStickTimer <= 0)
+                {
+                    isWallStickActive = false;
+                    _internalVelocityAdd = Vector3.zero; // Reset the internal velocity add
+                }
+            }
+        }
+
+
+        void OnCollisionEnter(Collision collision)
+        {
+            // Check if the character has collided with the top of the wall
+            if (collision.gameObject.CompareTag("TopOfWall"))
+            {
+                isWallStickActive = false;
+            }
+        }
+
+
+
+
+
+
+            /// <summary>
+            /// Handles movement state transitions and enter/exit callbacks
+            /// </summary>
+            public void TransitionToState(CharacterState newState)
         {
             CharacterState tmpInitialState = CurrentCharacterState;
             OnStateExit(tmpInitialState, newState);
@@ -170,6 +360,9 @@ namespace KinematicCharacterController.Examples
                                 break;
                         }
 
+                        //Sprinting input
+                        _isSprinting = inputs.Sprint; // Add this line
+
                         // Jumping input
                         if (inputs.JumpDown)
                         {
@@ -180,18 +373,19 @@ namespace KinematicCharacterController.Examples
                         // Crouching input
                         if (inputs.CrouchDown)
                         {
-                            _shouldBeCrouching = true;
+                            _shouldBeCrouching = !_shouldBeCrouching; // Toggle the crouching state
 
-                            if (!_isCrouching)
+                            if (_shouldBeCrouching && !_isCrouching)
                             {
                                 _isCrouching = true;
-                                Motor.SetCapsuleDimensions(0.5f, CrouchedCapsuleHeight, CrouchedCapsuleHeight * 0.5f);
-                                MeshRoot.localScale = new Vector3(1f, 0.5f, 1f);
+                                StartCoroutine(ScaleOverTime(MeshRoot, new Vector3(0.4f, 0.4f, 0.4f), 0.25f)); // Scale down over 1 second
+                                StartCoroutine(PlayParticleEffect(crouchParticleEffect, 0.5f)); // Play particle effect for 1 second
                             }
-                        }
-                        else if (inputs.CrouchUp)
-                        {
-                            _shouldBeCrouching = false;
+                            else if (!_shouldBeCrouching && _isCrouching)
+                            {
+                                _isCrouching = false;
+                                StartCoroutine(ScaleOverTime(MeshRoot, new Vector3(0.8f, 0.8f, 0.8f), 0.25f)); // Scale up over 1 second
+                            }
                         }
 
                         break;
@@ -284,6 +478,35 @@ namespace KinematicCharacterController.Examples
             {
                 case CharacterState.Default:
                     {
+                        // Handle wall stick
+                        HandleWallStick();
+
+                        // If the character is sticking to the wall, don't apply other forces
+                        if (isWallStickActive)
+                        {
+                            // Allow the character to move upwards
+                            if (Input.GetKey(KeyCode.W))
+                            {
+                                currentVelocity = Motor.CharacterUp * climbingSpeed; // Adjust the climbing speed here
+                            }
+                            else
+                            {
+                                currentVelocity = Vector3.zero;
+                            }
+
+                            // If a jump is requested, add a force away from the wall and upwards
+                            if (_jumpRequested)
+                            {
+                                currentVelocity += -transform.forward * jumpForce; // Adjust the jump force as needed
+                                currentVelocity += Motor.CharacterUp * jumpForce; // Add an upward force
+                                _jumpRequested = false;
+                            }
+
+                            return;
+                        }
+
+
+
                         // Ground movement
                         if (Motor.GroundingStatus.IsStableOnGround)
                         {
@@ -298,6 +521,19 @@ namespace KinematicCharacterController.Examples
                             Vector3 inputRight = Vector3.Cross(_moveInputVector, Motor.CharacterUp);
                             Vector3 reorientedInput = Vector3.Cross(effectiveGroundNormal, inputRight).normalized * _moveInputVector.magnitude;
                             Vector3 targetMovementVelocity = reorientedInput * MaxStableMoveSpeed;
+
+                            // Increase speed when sprinting
+                            if (_isSprinting)
+                            {
+                                float sprintMultiplier = 3f; // Adjust this value as needed
+                                targetMovementVelocity *= sprintMultiplier;
+                            }
+
+                            // If crouching, halve the speed
+                            if (_isCrouching)
+                            {
+                                targetMovementVelocity *= 0.5f;
+                            }
 
                             // Smooth movement Velocity
                             currentVelocity = Vector3.Lerp(currentVelocity, targetMovementVelocity, 1f - Mathf.Exp(-StableMovementSharpness * deltaTime));
@@ -374,11 +610,29 @@ namespace KinematicCharacterController.Examples
                                 _jumpRequested = false;
                                 _jumpConsumed = true;
                                 _jumpedThisFrame = true;
+                                // Set jump animation
+                                animator.SetBool(_animIDJump, true);
                             }
                         }
-
-                        // Take into account additive velocity
-                        if (_internalVelocityAdd.sqrMagnitude > 0f)
+                        else
+                        {
+                            // If we are not jumping, stop the jump animation
+                            animator.SetBool(_animIDJump, false);
+                        }
+                        // Handle free falling
+                        if (!Motor.GroundingStatus.IsStableOnGround)
+                        {
+                            // If we are not grounded, start the free fall animation
+                            animator.SetBool(_animIDFreeFall, true);
+                        }
+                        else
+                        {
+                            // If we are grounded, stop the free fall animation
+                            animator.SetBool(_animIDFreeFall, false);
+                        }
+                    
+                    // Take into account additive velocity
+                    if (_internalVelocityAdd.sqrMagnitude > 0f)
                         {
                             currentVelocity += _internalVelocityAdd;
                             _internalVelocityAdd = Vector3.zero;

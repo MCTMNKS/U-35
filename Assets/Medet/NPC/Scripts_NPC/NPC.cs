@@ -15,7 +15,7 @@ public abstract class NPC : MonoBehaviour,Iinteractable
 
     private void Start()
     {
-        _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        _playerTransform = GameObject.FindGameObjectWithTag("ExampleCharacter").transform;
     }
 
     private void Update()
