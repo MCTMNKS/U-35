@@ -180,7 +180,7 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
 
 <img width="702" alt="im1" src="https://github.com/user-attachments/assets/4fa90305-1602-4d52-b414-81a6b362eb93">
 
-![npc](https://github.com/user-attachments/assets/db53cf4d-f175-4d5b-8fc7-6ae142dc5bd0)
+<img width="702" alt="npc" src="https://github.com/user-attachments/assets/db53cf4d-f175-4d5b-8fc7-6ae142dc5bd0">
 
 <img width="702" alt="Ekran Resmi 2024-07-21 19 22 51" src="https://github.com/user-attachments/assets/01acfdba-5ffd-4276-9b81-53286e9dcac9">
 <img width="702" alt="Ekran Resmi 2024-07-21 19 22 37" src="https://github.com/user-attachments/assets/f6a483fd-8fa1-4ab7-824b-3a8128475397">
