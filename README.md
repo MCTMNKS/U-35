@@ -140,3 +140,91 @@ Product owner tarafından sağlanan geri bildirime göre seviye tasarımı göre
 ### •Diğer Notlar:
 Zaman problemi sebebiyle oyunun tamamlanan görevlerinin bir kısmı GitHub'a henüz pushlanmamıştır.
 
+## Sprint 2
+
+### • Sprint Notları:
+User Story'ler slack platformu içinde oluşturulan "Product Backlog" listesinin içindeki gerekli görevlere eklenmiştir. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+
+### • Sprint İçinde Tamamlanması Tahmin Edilen Puan:
+Sprint içi puan değerlendirmesi XXXXXXX olarak belirlenmiştir.
+
+### • Puan Tamamlama Mantığı:
+Proje boyunca tamamlanması gereken backlog puanı 360'dır. İlk Sprint için bitirilmesi istenilen puan sayısı XXXXXX olarak belirlenmiştir ancak bitirilen görevler kabul kriterlerini tam olarak karşılamadığı için puan XXXXXXX puana ulaşılmıştır. 
+
+### • Backlog Düzeni ve Story Seçimleri: 
+Backlogun slack platformu üzerinde hazırlanmasına karar verilmiştir. İkinci sprint backlogu, ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur.
+
+### • Daily Scrum: 
+Daily Scrum toplantılarının Discord platformu üzerinden yapılmasına karar verilmiştir. Takım üyeleri günlük olarak ilerlemelerini ana iletişim aracı olan Discord üzerinden #daily-scrum kanalı aracılığıyla yazılı olarak paylaşmıştır. ⁠
+
+Daily scrum toplantı notları ve toplantılara ilişkin ekran görüntüleri şu dosya üzerinden incelenebilir: [Daily Scrum Meeting Notları - Sprint2](https://github.com/user-attachments/files/16325246/DailyScrumMeetingNotesSprint2.docx)
+
+
+### • Sprint Board Update:
+Sprint board ekran görüntüleri:
+<img width="1188" alt="Ekran Resmi 2024-07-21 19 16 29" src="https://github.com/user-attachments/assets/49ed7ef1-e552-4535-91d9-b589ec5fbb38">
+
+<img width="1192" alt="Ekran Resmi 2024-07-21 19 15 57" src="https://github.com/user-attachments/assets/0099c653-3c96-4f80-a9fe-0c0e2e67e9c3">
+
+<img width="1190" alt="Ekran Resmi 2024-07-21 19 15 43" src="https://github.com/user-attachments/assets/fc4c4feb-6c13-4589-8a2e-f8a3c54f3628">
+
+
+
+
+### • Ürün Durumu:
+Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda paylaşılan ekran görüntüleri ve video linkleri ile gösterilmiştir.
+
+<img width="702" alt="menuana" src="https://github.com/user-attachments/assets/783ede56-74c1-435a-8655-234249f12460">
+
+<img width="702" alt="menuops" src="https://github.com/user-attachments/assets/b92a76fa-50d9-4742-95d6-3d65abda0170">
+![im1](https://github.com/user-attachments/assets/659b2ecd-a884-4418-90d4-8f396960a611)
+![npc](https://github.com/user-attachments/assets/74df8c67-9bcd-4ab2-9494-e787a2c2cf9f)
+<img width="1440" alt="Ekran Resmi 2024-07-21 19 22 51" src="https://github.com/user-attachments/assets/01acfdba-5ffd-4276-9b81-53286e9dcac9">
+<img width="1440" alt="Ekran Resmi 2024-07-21 19 22 37" src="https://github.com/user-attachments/assets/f6a483fd-8fa1-4ab7-824b-3a8128475397">
+
+[Kovalayan Düşman](https://youtu.be/AGwof48LvwM)
+[Köy Seviyesi Demo](https://youtu.be/7AaSP2eGwNY) 
+[Dağ Seviyesi Demo](https://www.youtube.com/watch?v=tP_LG18l_mc)
+
+
+
+### •Sprint Review:
+
+
+#### Katılımcılar:
+  -Mahmut Furkan Koçak  
+  -Mecit Menekşe  
+  -Medet Çınar  
+  -Melis Karadağ
+
+#### Özet ve Alınan Kararlar:
+
+#### Tamamlanan İşler: 
+  
+#### Gösterim:
+
+#### Planlanan ve Gerçekleşen: 
+
+#### Engeller: 
+
+#### Gelecek Sprint İçin: 
+
+#### Geri Bildirim: 
+
+
+
+
+
+
+### •Sprint Retrospective:
+
+
+#### İyi Gidenler:
+
+
+#### Olumsuz Gidenler:
+
+
+#### İyileştirilecekler:
+
+
