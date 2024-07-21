@@ -205,18 +205,54 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
   -Melis Karadağ
 
 #### Özet ve Alınan Kararlar:
+21/07/2024 tarihinde Discord platformu üzerinden iki haftalık ikinci sprint’in değerlendirilmesi ve gözden geçirilmesi yapılmıştır. Sprint Review’da -aşağıda da detaylıca açıklanmış olan- tamamlanan işler, planlanan ve gerçekleşen karşılaştırılması, sprint esnasında karşılaşılan engeller, gelecek sprint için göz önünde bulundurulması gereken noktalar görüşülmüştür. Sprint Review toplantısında takımca, Backlog üzerinde var olan görevlerin yanı sıra, -geliştirme süreci gereği- bir görev bittikten sonra yapılması gerekenler takip edilmesi ve ona göre aksiyon alınması, bu konuda iletişimde kalıması. tüm takım üyelerinin geliştirme sürecini takip edip birbirine yardımcı olması kararları alınmıştır.
 
 #### Tamamlanan İşler: 
+Kullanıcı hikayeleri, Slack platformunda yer alan görevlerin içinde yer alıyor. Bu dokümantasyonda tamamlanan görevler belirtilecek. Bu sprintte en başta yapılması planlanan: 
+      •	Dağ seviyesi (entegre işlemi devam ediyor)
+      •	Oyuncu karakterinin daha gelişmiş ve oyuna entegre edilmiş bir versiyonu (Küçülme mekaniği ve animasyonu - mekanikler ve animasyonlar)
+      •	Köy seviyesi (Görsel ve ortam olarak orjinal hali geliştirilmiş shaderlar ve assetler ile iyileştirildi, sorunlar ortadan kaldırıldı.)
+      •	Kovalayan düşman (Entegre işlemi devam ediyor.)
+      •	Diyalog sistemi (Güncellendi, bazı sorunları giderildi, font eklendi, UI için fade in, out gibi efektler eklendi.)
+      •	Ana menünün oyuna entegresi
+görevleri tamamlandı ya da bir kısmı tamamlandı.
+
+Bahsi geçen tamamlanan işlerin, Product Owner’ın kabul kriterlerine göre durumu şu şekildedir:
+      •	Dağ seviyesi: Genel olarak iyi durumda ancak daha çok geliştirilebilir, kriterlerin çoğunu karşılıyor. 
+      •	Oyuncu: Temel animasyonlar ve mekanik düzgün bir biçimde entegre edildi (animasyon geçişleri, oyuncu hızı vs.) ancak eklenmesi gereken şeyler hala           var.)
+      •	Köy seviyesi: Kabul kriterlerini karşılayacak şekilde ortam düzenlendi ve daha da geliştirildi (geliştirilen terrain shaderı, balık animasyonu,              geliştirilen asset evleri). NPC, kapı gibi küçük birkaç şeyin entegre edilmesi gerekli.
+      •	Kovalayan düşman: Dağ seviyesine entegre edilecek. Karakteri kovalayabiliyor, kabul kriterlerini karşılıyor.
+      •	Ana menü: Kabul kriterlerini karşılıyor ancak daha da geliştirilebilir. 
+
   
 #### Gösterim:
+Sprint esnasında takım üyeleri; Discord platformu aracılığıyla, takım toplantılarında ve Sprint Review esnasında diğer takım üyelerini oyunun güncel durumları ile alakalı bilgilendirmiştir. Sprint sonunda oyunun güncel durumu, ilgili alt başlık altında -aşağıda- ekran görüntüleri ile yer almaktadır. 
 
 #### Planlanan ve Gerçekleşen: 
+Sprint başında planlanan işler ile gerçekleşen işler arasında bazı farklar bulunmaktadır. Örneğin, takımca alınan, bu sprintte atak ve düşman ekleme işi, yapılan işlerin entegre edilmesi ve her şeyin düzgün çalışması için uğraşılması sebebiyle tamamlanamadı. 
+Planlanlanan işlerin tamamının Sprint süresince bitirilememesinin ana sebebi, -geliştirme sürecinin doğası gereği- söz konusu işlerde ve önceliklerde yaşanan ve yapılan bazı değişiklikler olarak görülmektedir.  
 
 #### Engeller: 
+Sprint esnasında, bazı görevlerin tamamlanması esnasında çeşitli engellerle karşılaşılmıştır ve aşağıda listelenen durumlar yaşanmıştır.
+      -Geliştirme sürecinin takibi: Geliştirme sürecinin nasıl ilerlediği, daily scrum ve genel kanalı üzerinden sürekli videolar ve mesajlar aracılığıyla           Product Owner tarafından diğer takım üyelerine aktarıldı ancak bu tarz hususların takım üyelerine birebir şekilde anlatılamaması ve yapılması gereken          görevleri direkt verilememesi netlik açısından engel oluşturdu. 
+
+      -Takım üyelerinin durumlarının uyuşmazlığı: Takım üyelerinin kişisel yoğunlukları sebebiyle sık sık toplantı yapılamadı, Discord üzerinden iletişime           verimli geçilememesi, takım üyelerinin birbirlerinin işleri ve oyun hakkında güncel kalmasını engellemiştir. 
+      
+      -Bazı teknik sorunlar
+ 
 
 #### Gelecek Sprint İçin: 
+Gelecek sprint için mevcut görevlerin kısa bir sürede temize çekilip birleştirilmesi, dağ seviyesine son dokunuşların yapılıp tünel seviyesi ve son boss seviyesinin bitirilmesi, AudioManager kurulumu ile birlikte oyuna ses efekti ve müziklerin eklenmesi ve oyun içinde karakterin özelliklerini, canını gösterecek UI’ın eklenmesi gelecek Sprint için öne çıkan işlerdir. Atak ve düşman mekaniğini yapılabilirse entegre edilecektir. 
+
+
+
 
 #### Geri Bildirim: 
+Product owner tarafından sağlanan geri bildirime göre Product owner olarak level dizayn ve ortam tasarımı bitirilirken, atak ve düşman mekaniğinin eklenmesi takımın önceliği olmalıdır. 
+
+Çoğu tamamlanan işin kriterleri karşıladığı değerlendirmesi takıma verilen geri bildirimler arasındadır. Bu hususta geliştirilebilir şeyler var olmasıyla birlikte, takımın önceliği ürünün bitirilmesi olmalıdır. Temel görevler bitirilip, eklenebilir.
+
+Sprint göz önünde bulundurulduğunda, yaşanan iletişim engellerine istinaden Product Owner’ın takımdan beklentisi discord üzerinden paylaştığı notlara göz atılması, geri bildirim verilmesi ve ona göre devam edilmedir. Tamamlanan Sprint’te Product Owner, herhangi bir sorun ile karşılaşıldığı durumda, konuyu daily scrumlar ve genel kanalı üzerinden belirtmiş olup sürecin devam etmesi adına ilgili problemi kendi çözerek devam etmeyi tercih etmiştir. Level dizayn ve ortam tasarımı, oynanışı canlandıracak şeyler eklenmesi vs. gibi şeyler zamanımı aldığı için tek tek takım arkadaşlarımı direktif vermek yerine genel üzerinden sürecin nasıl gittiğini anlatmayı tercih ettiği için ve herkesin müsaitlik durumunda değişiklik söz konusu olduğu için bazı konularda kafa karışıklığı söz konusu oldu ve planlanan işlerde yaşanan bazı değişimler, Product Owner tarafından takıma bildirilen önemli noktalardandır.
 
 
 
