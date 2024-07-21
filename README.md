@@ -146,7 +146,7 @@ Zaman problemi sebebiyle oyunun tamamlanan görevlerinin bir kısmı GitHub'a he
 User Story'ler slack platformu içinde oluşturulan "Product Backlog" listesinin içindeki gerekli görevlere eklenmiştir. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
 
 ### • Sprint İçinde Tamamlanması Tahmin Edilen Puan:
-Sprint içi puan değerlendirmesi XXXXXXX olarak belirlenmiştir.
+Sprint içi puan değerlendirmesi -geçmiş Sprint'ten bu Sprint'e aktarılan işlerin puanları da eklenmiş olmakla beraber- 150 olarak belirlenmiştir.
 
 ### • Puan Tamamlama Mantığı:
 Proje boyunca tamamlanması gereken backlog puanı 360'dır. İlk Sprint için bitirilmesi istenilen puan sayısı XXXXXX olarak belirlenmiştir ancak bitirilen görevler kabul kriterlerini tam olarak karşılamadığı için puan XXXXXXX puana ulaşılmıştır. 
