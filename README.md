@@ -261,11 +261,22 @@ Sprint göz önünde bulundurulduğunda, yaşanan iletişim engellerine istinade
 
 
 #### İyi Gidenler:
+- Sprint’te tamamlanması gereken işlerin büyük çoğunluğu tamamlandı.
+- Geliştirme süreci ile alakalı level design tarafımda yaşanan sorunların giderilmesi (ortam dizaynında shader geliştirilmesi, istenen kalitede çim efekti eklenmesi ve sorunlarının giderilmesi vs.) ve genel olarak yapılanların entegre edilmesi başarılı oldu.
+- Seviyelerin durumu ile ilgili sürekli bildirimde bulunuldu, ilgili görüntüler Discord aracılığıyla takım üyeleri ile paylaşıldı.
+- Herhangi bir sorun yaşanması durumunda, ilgili sorun projeyi bozmayacak şekilde çözülüp ve geliştirilip devam edildi, dolayısıyla oyunun ilerlemesi konusunda hızlı davranıldı ve aksama meydana gelmedi.
+
 
 
 #### Olumsuz Gidenler:
+- Takım üyelerinin çeşitli yoğunlukları sebebiyle ekip içi iletişim kopuklukları yaşandı.
+- Tüm takım üyeleri, Discord platformu üzerinden gerçekleştirilen paylaşımları güncel bir şekilde takip edemedi. Geliştirme sürecinin nasıl ilerlediğini yayınlanan şeylerin tüm takım üyeleri tarafından paylaşımı yapılmadı, dolayısıyla diğer takım üyeleri güncel durumu takip edip ve geri bildirim veremedi. 
+
 
 
 #### İyileştirilecekler:
+- Tüm takım geliştirme sürecine dahil olduğundan, herkesin birbirinin yaptığını takip etmesi, geri bildirimler sağlaması ve entegre edilme sürecinin tüm takım üyeleri tarafından takip edilmesi sağlanarak oyun geliştirme süreci iyileştirilecektir.
+- İletişim kanalımız üzerinde yazan her şeyin takip edilmesi ve bu vesileyle herkesin güncel kalması, yazılanları kısa ve net aktararak ve takım arkadaşlarımızı kanal üzerinde etiketleyip gözden kaçırmamalarına yardımcı olarak sağlanacaktır.
+- Süreçte yer yer, gerek teknik gerek takımsal pürüzler yaşanabileceğinin farkında olarak bu tarz durumlara karşılık daha hızlı aksiyon alınacaktır. 
 
 
