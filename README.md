@@ -177,13 +177,20 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
 <img width="702" alt="menuana" src="https://github.com/user-attachments/assets/783ede56-74c1-435a-8655-234249f12460">
 
 <img width="702" alt="menuops" src="https://github.com/user-attachments/assets/b92a76fa-50d9-4742-95d6-3d65abda0170">
-![im1](https://github.com/user-attachments/assets/659b2ecd-a884-4418-90d4-8f396960a611)
-![npc](https://github.com/user-attachments/assets/74df8c67-9bcd-4ab2-9494-e787a2c2cf9f)
-<img width="1440" alt="Ekran Resmi 2024-07-21 19 22 51" src="https://github.com/user-attachments/assets/01acfdba-5ffd-4276-9b81-53286e9dcac9">
-<img width="1440" alt="Ekran Resmi 2024-07-21 19 22 37" src="https://github.com/user-attachments/assets/f6a483fd-8fa1-4ab7-824b-3a8128475397">
+
+<img width="702" alt="im1" src="https://github.com/user-attachments/assets/4fa90305-1602-4d52-b414-81a6b362eb93">
+
+![npc](https://github.com/user-attachments/assets/db53cf4d-f175-4d5b-8fc7-6ae142dc5bd0)
+
+<img width="702" alt="Ekran Resmi 2024-07-21 19 22 51" src="https://github.com/user-attachments/assets/01acfdba-5ffd-4276-9b81-53286e9dcac9">
+<img width="702" alt="Ekran Resmi 2024-07-21 19 22 37" src="https://github.com/user-attachments/assets/f6a483fd-8fa1-4ab7-824b-3a8128475397">
 
 [Kovalayan Düşman](https://youtu.be/AGwof48LvwM)
+
+
 [Köy Seviyesi Demo](https://youtu.be/7AaSP2eGwNY) 
+
+
 [Dağ Seviyesi Demo](https://www.youtube.com/watch?v=tP_LG18l_mc)
 
 
