@@ -218,11 +218,11 @@ Kullanıcı hikayeleri, Slack platformunda yer alan görevlerin içinde yer alı
 görevleri tamamlandı ya da bir kısmı tamamlandı.
 
 Bahsi geçen tamamlanan işlerin, Product Owner’ın kabul kriterlerine göre durumu şu şekildedir:
-      - Dağ seviyesi: Genel olarak iyi durumda ancak daha çok geliştirilebilir, kriterlerin çoğunu karşılıyor. 
-      - Oyuncu: Temel animasyonlar ve mekanik düzgün bir biçimde entegre edildi (animasyon geçişleri, oyuncu hızı vs.) ancak eklenmesi gereken şeyler hala           var.)
-      -	Köy seviyesi: Kabul kriterlerini karşılayacak şekilde ortam düzenlendi ve daha da geliştirildi (geliştirilen terrain shaderı, balık animasyonu,              geliştirilen asset evleri). NPC, kapı gibi küçük birkaç şeyin entegre edilmesi gerekli.
-      -	Kovalayan düşman: Dağ seviyesine entegre edilecek. Karakteri kovalayabiliyor, kabul kriterlerini karşılıyor.
-      -	Ana menü: Kabul kriterlerini karşılıyor ancak daha da geliştirilebilir. 
+- Dağ seviyesi: Genel olarak iyi durumda ancak daha çok geliştirilebilir, kriterlerin çoğunu karşılıyor.
+- Oyuncu: Temel animasyonlar ve mekanik düzgün bir biçimde entegre edildi (animasyon geçişleri, oyuncu hızı vs.) ancak eklenmesi gereken şeyler hala           var.)
+- Köy seviyesi: Kabul kriterlerini karşılayacak şekilde ortam düzenlendi ve daha da geliştirildi (geliştirilen terrain shaderı, balık animasyonu,              geliştirilen asset evleri). NPC, kapı gibi küçük birkaç şeyin entegre edilmesi gerekli.
+- Kovalayan düşman: Dağ seviyesine entegre edilecek. Karakteri kovalayabiliyor, kabul kriterlerini karşılıyor.
+- Ana menü: Kabul kriterlerini karşılıyor ancak daha da geliştirilebilir. 
 
   
 #### Gösterim:
@@ -234,11 +234,9 @@ Planlanlanan işlerin tamamının Sprint süresince bitirilememesinin ana sebebi
 
 #### Engeller: 
 Sprint esnasında, bazı görevlerin tamamlanması esnasında çeşitli engellerle karşılaşılmıştır ve aşağıda listelenen durumlar yaşanmıştır.
-      - Geliştirme sürecinin takibi: Geliştirme sürecinin nasıl ilerlediği, daily scrum ve genel kanalı üzerinden sürekli videolar ve mesajlar aracılığıyla           Product Owner tarafından diğer takım üyelerine aktarıldı ancak bu tarz hususların takım üyelerine birebir şekilde anlatılamaması ve yapılması gereken          görevleri direkt verilememesi netlik açısından engel oluşturdu. 
-
-      - Takım üyelerinin durumlarının uyuşmazlığı: Takım üyelerinin kişisel yoğunlukları sebebiyle sık sık toplantı yapılamadı, Discord üzerinden iletişime           verimli geçilememesi, takım üyelerinin birbirlerinin işleri ve oyun hakkında güncel kalmasını engellemiştir. 
-      
-      - Bazı teknik sorunlar
+- Geliştirme sürecinin takibi: Geliştirme sürecinin nasıl ilerlediği, daily scrum ve genel kanalı üzerinden sürekli videolar ve mesajlar aracılığıyla           Product Owner tarafından diğer takım üyelerine aktarıldı ancak bu tarz hususların takım üyelerine birebir şekilde anlatılamaması ve yapılması gereken          görevleri direkt verilememesi netlik açısından engel oluşturdu.
+- Takım üyelerinin durumlarının uyuşmazlığı: Takım üyelerinin kişisel yoğunlukları sebebiyle sık sık toplantı yapılamadı, Discord üzerinden iletişime           verimli geçilememesi, takım üyelerinin birbirlerinin işleri ve oyun hakkında güncel kalmasını engellemiştir.
+- Bazı teknik sorunlar
  
 
 #### Gelecek Sprint İçin: 
