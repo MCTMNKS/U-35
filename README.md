@@ -149,7 +149,7 @@ User Story'ler slack platformu içinde oluşturulan "Product Backlog" listesinin
 Sprint içi puan değerlendirmesi -geçmiş Sprint'ten bu Sprint'e aktarılan işlerin puanları da eklenmiş olmakla beraber- 150 olarak belirlenmiştir.
 
 ### • Puan Tamamlama Mantığı:
-Proje boyunca tamamlanması gereken backlog puanı 360'dır. İkinci Sprint için bitirilmesi istenilen puan sayısı 150 olarak belirlenmiştir ancak bitirilen görevler kabul kriterlerini tam olarak karşılamadığı için puan XXXXXXX puana ulaşılmıştır. 
+Proje boyunca tamamlanması gereken backlog puanı 360'dır. İkinci sprint için bitirilmesi istenilen puan sayısı 150 olarak belirlenmiştir ve görevler tamamlanmıştır. Toplam 230 puana ulaşılmıştır. 
 
 ### • Backlog Düzeni ve Story Seçimleri: 
 Backlogun slack platformu üzerinde hazırlanmasına karar verilmiştir. İkinci sprint backlogu, ilk yapılacak story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde sıradan seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur.
@@ -162,11 +162,9 @@ Daily scrum toplantı notları ve toplantılara ilişkin ekran görüntüleri ş
 
 ### • Sprint Board Update:
 Sprint board ekran görüntüleri:
-<img width="1188" alt="Ekran Resmi 2024-07-21 19 16 29" src="https://github.com/user-attachments/assets/49ed7ef1-e552-4535-91d9-b589ec5fbb38">
+![pb1](https://github.com/user-attachments/assets/a6ffc8b3-d367-4b4c-bbd7-901485eac8ae)
 
-<img width="1192" alt="Ekran Resmi 2024-07-21 19 15 57" src="https://github.com/user-attachments/assets/0099c653-3c96-4f80-a9fe-0c0e2e67e9c3">
-
-<img width="1190" alt="Ekran Resmi 2024-07-21 19 15 43" src="https://github.com/user-attachments/assets/fc4c4feb-6c13-4589-8a2e-f8a3c54f3628">
+![pb2](https://github.com/user-attachments/assets/17bdefb6-d585-4159-ac62-78f30f7311b6)
 
 
 
@@ -180,7 +178,7 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
 
 <img width="702" alt="im1" src="https://github.com/user-attachments/assets/4fa90305-1602-4d52-b414-81a6b362eb93">
 
-<img width="702" alt="npc" src="https://github.com/user-attachments/assets/db53cf4d-f175-4d5b-8fc7-6ae142dc5bd0">
+<img width="702" alt="npcguncel" src="https://github.com/user-attachments/assets/db53cf4d-f175-4d5b-8fc7-6ae142dc5bd0">
 
 <img width="702" alt="Ekran Resmi 2024-07-21 19 22 51" src="https://github.com/user-attachments/assets/01acfdba-5ffd-4276-9b81-53286e9dcac9">
 <img width="702" alt="Ekran Resmi 2024-07-21 19 22 37" src="https://github.com/user-attachments/assets/f6a483fd-8fa1-4ab7-824b-3a8128475397">
