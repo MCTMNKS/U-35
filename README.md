@@ -209,12 +209,12 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
 
 #### Tamamlanan İşler: 
 Kullanıcı hikayeleri, Slack platformunda yer alan görevlerin içinde yer alıyor. Bu dokümantasyonda tamamlanan görevler belirtilecek. Bu sprintte en başta yapılması planlanan: 
-      •	Dağ seviyesi (entegre işlemi devam ediyor)
-      •	Oyuncu karakterinin daha gelişmiş ve oyuna entegre edilmiş bir versiyonu (Küçülme mekaniği ve animasyonu - mekanikler ve animasyonlar)
-      •	Köy seviyesi (Görsel ve ortam olarak orjinal hali geliştirilmiş shaderlar ve assetler ile iyileştirildi, sorunlar ortadan kaldırıldı.)
-      •	Kovalayan düşman (Entegre işlemi devam ediyor.)
-      •	Diyalog sistemi (Güncellendi, bazı sorunları giderildi, font eklendi, UI için fade in, out gibi efektler eklendi.)
-      •	Ana menünün oyuna entegresi
+  - Dağ seviyesi (entegre işlemi devam ediyor)
+  - Oyuncu karakterinin daha gelişmiş ve oyuna entegre edilmiş bir versiyonu (Küçülme mekaniği ve animasyonu - mekanikler ve animasyonlar)
+  - Köy seviyesi (Görsel ve ortam olarak orjinal hali geliştirilmiş shaderlar ve assetler ile iyileştirildi, sorunlar ortadan kaldırıldı.)
+  - Kovalayan düşman (Entegre işlemi devam ediyor.)
+  - Diyalog sistemi (Güncellendi, bazı sorunları giderildi, font eklendi, UI için fade in, out gibi efektler eklendi.)
+  - Ana menünün oyuna entegresi
 görevleri tamamlandı ya da bir kısmı tamamlandı.
 
 Bahsi geçen tamamlanan işlerin, Product Owner’ın kabul kriterlerine göre durumu şu şekildedir:
