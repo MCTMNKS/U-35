@@ -85,6 +85,7 @@ public class OptionsMenu : MonoBehaviour
         {
             selectedRes = 0;
         }
+        AudioManager.instance.PlaySFX(0);
         updateResLabel();
 
     }
@@ -96,6 +97,7 @@ public class OptionsMenu : MonoBehaviour
         {
             selectedRes = resolutions.Length-1;
         }
+        AudioManager.instance.PlaySFX(0);
         updateResLabel();
 
     }
@@ -119,6 +121,7 @@ public class OptionsMenu : MonoBehaviour
         {
             QualitySettings.vSyncCount=0;
         }
+        AudioManager.instance.PlaySFX(0);
 
         //set the resoluiton
         Screen.SetResolution(resolutions[selectedRes].horizontal,resolutions[selectedRes].vertical,fullScreenTog.isOn);
