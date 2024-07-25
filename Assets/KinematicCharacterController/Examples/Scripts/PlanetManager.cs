@@ -18,6 +18,9 @@ namespace KinematicCharacterController.Examples
         public Teleporter OnPlaygroundTeleportingZone;
         public Teleporter OnPlanetTeleportingZone;
 
+        public Teleporter OnSecondPlaygroundTeleportingZone; // New teleporter on the main world
+        public Teleporter OnSecondPlanetTeleportingZone; // New teleporter on the planet
+
         private List<ExampleCharacterController> _characterControllersOnPlanet = new List<ExampleCharacterController>();
         private Vector3 _savedGravity;
         private Quaternion _lastRotation;
@@ -29,6 +32,12 @@ namespace KinematicCharacterController.Examples
 
             OnPlanetTeleportingZone.OnCharacterTeleport -= UnControlGravity;
             OnPlanetTeleportingZone.OnCharacterTeleport += UnControlGravity;
+
+            OnSecondPlaygroundTeleportingZone.OnCharacterTeleport -= ControlGravity; // Unsubscribe from event
+            OnSecondPlaygroundTeleportingZone.OnCharacterTeleport += ControlGravity; // Subscribe to event
+
+            OnSecondPlanetTeleportingZone.OnCharacterTeleport -= UnControlGravityNoGravityEffect; // Unsubscribe from event
+            OnSecondPlanetTeleportingZone.OnCharacterTeleport += UnControlGravityNoGravityEffect; // Subscribe to event
 
             _lastRotation = PlanetMover.transform.rotation;
 
@@ -60,6 +69,12 @@ namespace KinematicCharacterController.Examples
         void UnControlGravity(ExampleCharacterController cc)
         {
             cc.Gravity = _savedGravity;
+            _characterControllersOnPlanet.Remove(cc);
+        }
+
+        void UnControlGravityNoGravityEffect(ExampleCharacterController cc)
+        {
+            // Don't change the gravity
             _characterControllersOnPlanet.Remove(cc);
         }
     }

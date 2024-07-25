@@ -62,6 +62,19 @@ namespace KinematicCharacterController.Examples
         public float JumpScalableForwardSpeed = 10f;
         public float JumpPreGroundingGraceTime = 0f;
         public float JumpPostGroundingGraceTime = 0f;
+        // Double jump variables (Furkan)
+        private bool _canDoubleJump = false;
+        private bool _doubleJumpUsed = false;
+        private bool _doubleJumpEnabled = false; // Double jump will be activated when the player collects the ring
+
+        [Header("Dash")] // Added for dash mechanic (Furkan)
+        public float DashSpeed = 50f; // The speed at which the character will dash
+        public float DashDistance = 5f; // The distance the character will dash
+        private bool _isDashing = false; // Whether the character is currently dashing
+        private float _dashTimer = 3f; // A timer for the dash duration
+        private bool _dashEnabled = false; // Dash will be activated when the player collects the ring
+        private float _lastDashTime = -2f; // Initialize to a value more than 3 seconds ago (dash cooldown)
+        private float _dashCooldown = 2f; // The cooldown duration in seconds (dash cooldown)
 
         [Header("Wall Interaction")]
         public bool isTouchingWall = false;
@@ -101,6 +114,12 @@ namespace KinematicCharacterController.Examples
         public ParticleSystem crouchParticleEffect;
         private Vector3 originalCharacterScale;
         private Vector3 originalCapsuleDimensions;
+        // Added this variable to store the dash direction
+        private Vector3 _dashDirection;
+        // for squashing and stretching
+        private Vector3 originalScale;
+        private bool isReturningToOriginalScale;
+        private bool isInAir;
 
 
 
@@ -146,7 +165,7 @@ namespace KinematicCharacterController.Examples
             originalCapsuleDimensions = new Vector3(0.4f, 3f, 1.5f);
             _animIDJump = Animator.StringToHash("IsJumping");
             _animIDFreeFall = Animator.StringToHash("IsFreeFalling");
-
+            originalScale = MeshRoot.localScale; // Store the original scale
         }
         private void Awake()
         {
@@ -277,7 +296,7 @@ namespace KinematicCharacterController.Examples
         void OnCollisionEnter(Collision collision)
         {
             // Check if the character has collided with the top of the wall
-            if (collision.gameObject.CompareTag("TopOfWall"))
+            if (collision.gameObject.CompareTag("Wall"))
             {
                 isWallStickActive = false;
             }
@@ -332,6 +351,16 @@ namespace KinematicCharacterController.Examples
         /// </summary>
         public void SetInputs(ref PlayerCharacterInputs inputs)
         {
+            // Handle dash input
+            if (_dashEnabled && Input.GetKeyDown(KeyCode.R) && !_isDashing && Time.time - _lastDashTime > _dashCooldown)
+            {
+                _isDashing = true;
+                _dashTimer = 0f;
+                _lastDashTime = Time.time; // Update the time of the last dash
+
+                // Store the dash direction
+                _dashDirection = _moveInputVector;
+            }
             // Clamp input
             Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, inputs.MoveAxisForward), 1f);
 
@@ -478,8 +507,34 @@ namespace KinematicCharacterController.Examples
             {
                 case CharacterState.Default:
                     {
-                        // Handle wall stick
-                        HandleWallStick();
+                        // Stretch based on vertical speed only when in the air
+                        if (isInAir && !isReturningToOriginalScale && !_isCrouching)
+                        {
+                            float stretchFactor = 0.8f + Mathf.Clamp(Mathf.Abs(currentVelocity.y) / 5f, 0f, 0.05f);
+                            MeshRoot.localScale = new Vector3(0.7f / stretchFactor, stretchFactor, 0.8f / stretchFactor);
+                        }
+                    
+                    if (_isDashing)
+                        {
+                            // Dash towards the stored dash direction
+                            currentVelocity = _dashDirection * DashSpeed;
+
+                            // Increment the dash timer
+                            _dashTimer += deltaTime;
+
+                            // Calculate the distance traveled
+                            float dashDistanceTraveled = DashSpeed * _dashTimer;
+
+                            // End the dash if the distance has been exceeded
+                            if (dashDistanceTraveled >= DashDistance)
+                            {
+                                _isDashing = false;
+                            }
+                        }
+                        else
+                        
+                            // Handle wall stick
+                            HandleWallStick();
 
                         // If the character is sticking to the wall, don't apply other forces
                         if (isWallStickActive)
@@ -585,6 +640,7 @@ namespace KinematicCharacterController.Examples
                             currentVelocity *= (1f / (1f + (Drag * deltaTime)));
                         }
 
+
                         // Handle jumping
                         _jumpedThisFrame = false;
                         _timeSinceJumpRequested += deltaTime;
@@ -601,7 +657,6 @@ namespace KinematicCharacterController.Examples
                                 }
 
                                 // Makes the character skip ground probing/snapping on its next update. 
-                                // If this line weren't here, the character would remain snapped to the ground when trying to jump. Try commenting this line out and see.
                                 Motor.ForceUnground();
 
                                 // Add to the return velocity and reset jump state
@@ -610,8 +665,18 @@ namespace KinematicCharacterController.Examples
                                 _jumpRequested = false;
                                 _jumpConsumed = true;
                                 _jumpedThisFrame = true;
-                                // Set jump animation
-                                animator.SetBool(_animIDJump, true);
+
+                                // Allow double jump since we jumped from the ground
+                                _canDoubleJump = true;
+                                _doubleJumpUsed = false;
+                            }
+                            else if (_doubleJumpEnabled && _canDoubleJump && !_doubleJumpUsed) // Check _doubleJumpEnabled here
+                            {
+                                // Double jump
+                                currentVelocity += (Motor.CharacterUp * JumpUpSpeed) - Vector3.Project(currentVelocity, Motor.CharacterUp);
+                                _jumpRequested = false;
+                                _doubleJumpUsed = true;
+                                _jumpedThisFrame = true;
                             }
                         }
                         else
@@ -646,6 +711,18 @@ namespace KinematicCharacterController.Examples
         /// (Called by KinematicCharacterMotor during its update cycle)
         /// This is called after the character has finished its movement update
         /// </summary>
+
+        public void EnableDoubleJump()
+        {
+            _doubleJumpEnabled = true;
+        }
+        // Call this function when the player collects the ring
+        public void EnableDash()
+        {
+            _dashEnabled = true;
+        }
+        // Call this function as well when the player collects the ring
+
         public void AfterCharacterUpdate(float deltaTime)
         {
             switch (CurrentCharacterState)
@@ -757,10 +834,48 @@ namespace KinematicCharacterController.Examples
 
         protected void OnLanded()
         {
+            // Disable double jump since we're on the ground
+            _canDoubleJump = false;
+            _doubleJumpUsed = false;
+
+            // Apply squash effect only if not crouching
+            if (!_isCrouching)
+            {
+                MeshRoot.localScale = new Vector3(1.1f, 0.8f, 1.1f);
+
+                // Reset scale after a short delay
+                StartCoroutine(ResetScale());
+            }
+
+            // Update state
+            isInAir = false;
         }
+
 
         protected void OnLeaveStableGround()
         {
+            // Update state
+            isInAir = true;
+        }
+        private IEnumerator ResetScale()
+        {
+            isReturningToOriginalScale = true;
+
+            yield return new WaitForSeconds(0.1f);
+
+            float transitionDuration = 0.2f;
+            Vector3 initialScale = MeshRoot.localScale;
+            float time = 0f;
+
+            while (time < transitionDuration)
+            {
+                time += Time.deltaTime;
+                MeshRoot.localScale = Vector3.Lerp(initialScale, originalScale, time / transitionDuration);
+                yield return null;
+            }
+
+            MeshRoot.localScale = originalScale;
+            isReturningToOriginalScale = false;
         }
 
         public void OnDiscreteCollisionDetected(Collider hitCollider)

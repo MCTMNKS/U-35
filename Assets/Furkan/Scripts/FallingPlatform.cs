@@ -9,6 +9,7 @@ public class FallingPlatform : MonoBehaviour
     public float resetDelay = 5f;
     public Color steppedOnColor = Color.red;
     public Color steppedOnEmissionColor = Color.black; // No emission when stepped on
+    public AudioSource audioSource; // Add this line
 
     private Vector3 originalPosition;
     private Rigidbody rb;
@@ -23,6 +24,7 @@ public class FallingPlatform : MonoBehaviour
         originalPosition = transform.position;
         originalColor = material.GetColor("_BaseColor"); // Store the original base color
         originalEmissionColor = material.GetColor("_EmissionColor"); // Store the original emission color
+        audioSource = GetComponent<AudioSource>(); // And this line
     }
 
     void OnTriggerEnter(Collider other)
@@ -31,9 +33,14 @@ public class FallingPlatform : MonoBehaviour
         {
             material.SetColor("_BaseColor", steppedOnColor);
             material.SetColor("_EmissionColor", steppedOnEmissionColor); // Change the emission color
+            if (!audioSource.isPlaying) // Add this line
+            {
+                audioSource.Play(); // And this line
+            }
             StartCoroutine(Shake());
         }
     }
+
 
     IEnumerator Shake()
     {
