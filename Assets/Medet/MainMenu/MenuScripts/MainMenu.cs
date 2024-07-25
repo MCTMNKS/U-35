@@ -15,6 +15,8 @@ public class MainMenu : MonoBehaviour
     {
         Cursor.visible=true;
         Cursor.lockState = CursorLockMode.None;
+        //menu müziği
+        AudioManager.instance.PlayMenuMusic();
     }
 
     // Update is called once per frame
@@ -26,23 +28,28 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        AudioManager.instance.PlaySFX(0);
         SceneManager.LoadScene(firstLevel);
 
     }
 
     public void OpenOptions()
     {
+        AudioManager.instance.PlaySFX(0);
         optionsScreen.SetActive(true);
 
     }
 
     public void ClosedOptions()
     {
+        AudioManager.instance.PlaySFX(0);
+        
         optionsScreen.SetActive(false);
 
     }
     public void QuitGame()
     {
+        AudioManager.instance.PlaySFX(0);
         Application.Quit();
     }
 }
