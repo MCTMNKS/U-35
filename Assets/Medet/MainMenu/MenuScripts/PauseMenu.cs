@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject optionsScreen,pauseScreen;
+    public GameObject optionsScreen,pauseScreen,ControlScreen;
+    public GameObject inGameCanvas;
 
     public string mainMenuScene;
 
@@ -27,8 +28,17 @@ public class PauseMenu : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.P))
         {
             PauseunPause();
+            if(isPaused==true)
+            {
+                inGameCanvas.SetActive(false);
+
+            }
         }
         
+            if (isPaused==false)
+            {
+                inGameCanvas.SetActive(true);
+            }
     }
 
 
@@ -61,6 +71,16 @@ public class PauseMenu : MonoBehaviour
     {
         optionsScreen.SetActive(false);
 
+    }
+    public void openControls()
+    {
+        ControlScreen.SetActive(true);
+
+    }
+
+    public void closeControls()
+    {
+        ControlScreen.SetActive(false);
     }
     public void QuittoMain()
     {

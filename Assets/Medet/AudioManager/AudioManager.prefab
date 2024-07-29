@@ -401,9 +401,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 4015aa2c15a7548ed9d84e544c8dddd4, type: 2}
   menuMusic: {fileID: 373914498706933075}
-  BossMusic: {fileID: 0}
-  levelTracks: []
-  allSFX: []
+  BossMusic: {fileID: 373914498706933075}
+  levelTracks:
+  - {fileID: 373914498706933075}
+  allSFX:
+  - {fileID: 6297894372231270179}
 --- !u!1 &7844913263075634745
 GameObject:
   m_ObjectHideFlags: 0
