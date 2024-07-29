@@ -17,6 +17,15 @@ public class DoubleJumpPowerUp : MonoBehaviour
             // Enable dashing
             controller.EnableDash();
 
+            // Find the ExampleCharacterCamera component
+            ExampleCharacterCamera camera = FindObjectOfType<ExampleCharacterCamera>();
+
+            // Enable dash power in the camera for screen shake
+            if (camera != null)
+            {
+                camera.EnableDashPower();
+            }
+
             // Destroy the power-up object
             Destroy(gameObject);
         }

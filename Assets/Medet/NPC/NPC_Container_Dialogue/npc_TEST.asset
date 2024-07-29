@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Bastion
   npcPortrait: {fileID: 21300000, guid: 5f037b27f075f18498e37a80e776173f, type: 3}
-  dialougueSound: {fileID: 8300000, guid: f52f8d3a627c7304fb55034f798266ba, type: 3}
+  dialougueSound: {fileID: 0}
   paragpraphs:
   - '... Atlas, look at you! You''ve changed so much, couldn''t even recognize you
     for a second there. '

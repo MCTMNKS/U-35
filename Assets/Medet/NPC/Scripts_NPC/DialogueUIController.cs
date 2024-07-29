@@ -8,7 +8,7 @@ public class DialogueUIController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI NPCnameText;
     [SerializeField] private TextMeshProUGUI NPCdialogueText;
-    [SerializeField] private Image NPCportraitImage; //chatgpt kÄ±smÄ±
+    [SerializeField] private Image NPCportraitImage; //chatgpt kýsmý
 
     [SerializeField] private AudioSource NPCaudio;
 
@@ -20,7 +20,7 @@ public class DialogueUIController : MonoBehaviour
 
     private Queue<string> paragraphs = new Queue<string>();
 
-    private bool conversationEnded,isTyping;
+    private bool conversationEnded, isTyping;
 
     private string p;
 
@@ -39,6 +39,13 @@ public class DialogueUIController : MonoBehaviour
 
     public void displayNextParagraph(DialogueText dialogueText)
     {
+
+        // Check if the GameObject is active
+        if (!gameObject.activeSelf)
+        {
+            // If not, activate it
+            gameObject.SetActive(true);
+        }
         // Fade in when the dialogue starts (copilot)
         StartCoroutine(FadeCanvasGroup(canvasGroup, canvasGroup.alpha, 1, fadeInTime));
 
@@ -49,15 +56,15 @@ public class DialogueUIController : MonoBehaviour
             {
                 //start a convo
                 startConversation(dialogueText);
-                //chatgpt ses kÄ±smÄ±
+                //chatgpt ses kýsmý
                 if (dialogueText.dialougueSound != null)
                 {
                     NPCaudio.PlayOneShot(dialogueText.dialougueSound);
 
                 }
-                //chatgpt ses kÄ±smÄ±
+                //chatgpt ses kýsmý
             }
-            else if(conversationEnded && !isTyping)
+            else if (conversationEnded && !isTyping)
             {
                 //end a convo
                 endConversation();
@@ -82,7 +89,7 @@ public class DialogueUIController : MonoBehaviour
         //NPCdialogueText.text = p;
 
 
-        if(paragraphs.Count == 0)
+        if (paragraphs.Count == 0)
         {
             conversationEnded = true;
         }
@@ -110,7 +117,7 @@ public class DialogueUIController : MonoBehaviour
             paragraphs.Enqueue(dialogueText.paragpraphs[i]);
 
         }
-        NPCportraitImage.sprite = dialogueText.npcPortrait; //chatgpt kÄ±smÄ±
+        NPCportraitImage.sprite = dialogueText.npcPortrait; //chatgpt kýsmý
     }
 
     private void endConversation()
@@ -133,7 +140,7 @@ public class DialogueUIController : MonoBehaviour
         float elapsedTime = 0f;
         int charIndex = 0;
         charIndex = Mathf.Clamp(charIndex, 0, p.Length);
-        while(charIndex < p.Length)
+        while (charIndex < p.Length)
         {
             elapsedTime += Time.deltaTime * typeSpeed;
             charIndex = Mathf.FloorToInt(elapsedTime);
@@ -164,6 +171,17 @@ public class DialogueUIController : MonoBehaviour
         isTyping = false;
 
     }
+      public void ResetDialogue()
+    {
+        //clear the queue
+        paragraphs.Clear();
+
+        //clear the dialogue text and NPC name text
+        NPCdialogueText.text = "";
+        NPCnameText.text = "";
+
+        conversationEnded = false;
+    }
 
     private IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end, float lerpTime = 1) //copilot
     {
@@ -186,4 +204,3 @@ public class DialogueUIController : MonoBehaviour
         }
     }
 }
-

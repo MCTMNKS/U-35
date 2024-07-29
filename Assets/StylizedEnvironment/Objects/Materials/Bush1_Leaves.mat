@@ -86,7 +86,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Opacity_Texture:
-        m_Texture: {fileID: 2800000, guid: bcf0a3e7efe561740bcc7c08bc230ef0, type: 3}
+        m_Texture: {fileID: 2800000, guid: aaaeda905291f914b8ec5022ea31b0f7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -144,9 +144,9 @@ Material:
     - _Wind_Power: 0.1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.4180462, g: 0.6039216, b: 0.19215687, a: 1}
+    - _Color: {r: 1, g: 0.017977772, b: 0, a: 1}
     - _Color_Multiplier: {r: 0.34420612, g: 0.8018868, b: 0.41061467, a: 1}
-    - _Color_Tint: {r: 0.45100603, g: 0.735849, b: 0.42623708, a: 1}
+    - _Color_Tint: {r: 0, g: 1, b: 0.92947245, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _SecondColor: {r: 0.10524209, g: 0.4056604, b: 0.10591021, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}

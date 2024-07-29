@@ -93,6 +93,14 @@ namespace KinematicCharacterController.Examples
         public Transform CameraFollowPoint;
         public float CrouchedCapsuleHeight = 1f;
 
+        //audio
+        public AudioClip[] FootstepAudioClips;
+        public AudioSource audioSource;
+        private float _timeSinceLastFootstep;
+        public float FootstepSoundInterval = 0.5f; // Time interval between footstep sounds
+
+
+
         public CharacterState CurrentCharacterState { get; private set; }
 
         private Collider[] _probedColliders = new Collider[8];
@@ -120,6 +128,8 @@ namespace KinematicCharacterController.Examples
         private Vector3 originalScale;
         private bool isReturningToOriginalScale;
         private bool isInAir;
+
+        private bool _cursorShouldBeLocked = true; // for esc key toggle
 
 
 
@@ -166,6 +176,8 @@ namespace KinematicCharacterController.Examples
             _animIDJump = Animator.StringToHash("IsJumping");
             _animIDFreeFall = Animator.StringToHash("IsFreeFalling");
             originalScale = MeshRoot.localScale; // Store the original scale
+            audioSource = GetComponent<AudioSource>();
+
         }
         private void Awake()
         {
@@ -181,6 +193,23 @@ namespace KinematicCharacterController.Examples
         // Animator states and interpolation (smooth transition between states)
         private void Update()
         {
+            // Toggle cursor lock state when the Escape key is pressed
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                _cursorShouldBeLocked = !_cursorShouldBeLocked;
+            }
+
+            // Apply cursor lock state and visibility
+            if (_cursorShouldBeLocked)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
             // Cast a ray from the character's position in the direction they are facing
             RaycastHit hit;
             if (Physics.Raycast(transform.position, transform.forward, out hit, 1f))
@@ -242,6 +271,7 @@ namespace KinematicCharacterController.Examples
 
             particleEffect.Stop();
         }
+
 
         void HandleWallStick()
         {
@@ -360,6 +390,8 @@ namespace KinematicCharacterController.Examples
 
                 // Store the dash direction
                 _dashDirection = _moveInputVector;
+                // Trigger the dash animation
+                animator.SetTrigger("Dash");
             }
             // Clamp input
             Vector3 moveInputVector = Vector3.ClampMagnitude(new Vector3(inputs.MoveAxisRight, 0f, inputs.MoveAxisForward), 1f);
@@ -529,6 +561,9 @@ namespace KinematicCharacterController.Examples
                             if (dashDistanceTraveled >= DashDistance)
                             {
                                 _isDashing = false;
+
+                                // Reset the dash animation trigger
+                                animator.ResetTrigger("Dash");
                             }
                         }
                         else
@@ -841,10 +876,17 @@ namespace KinematicCharacterController.Examples
             // Apply squash effect only if not crouching
             if (!_isCrouching)
             {
-                MeshRoot.localScale = new Vector3(1.1f, 0.8f, 1.1f);
+                MeshRoot.localScale = new Vector3(1.14f, 0.75f, 1.14f);
 
                 // Reset scale after a short delay
                 StartCoroutine(ResetScale());
+            }
+
+            // Play footstep sound
+            if (FootstepAudioClips.Length > 0)
+            {
+                var clip = FootstepAudioClips[UnityEngine.Random.Range(0, FootstepAudioClips.Length)];
+                audioSource.PlayOneShot(clip);
             }
 
             // Update state

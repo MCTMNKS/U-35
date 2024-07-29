@@ -9,7 +9,7 @@ public class CloudEffect : MonoBehaviour
         if (other.gameObject.CompareTag("ExampleCharacter"))
         {
             cloudEffect.Play();
-            Invoke("StopCloudEffect", 1f); // stops the effect after 2 seconds
+            Invoke("StopCloudEffect", 0.5f); // stops the effect after 2 seconds
         }
     }
 

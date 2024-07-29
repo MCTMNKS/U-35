@@ -2489,6 +2489,8 @@ MonoBehaviour:
   JumpScalableForwardSpeed: 10
   JumpPreGroundingGraceTime: 0
   JumpPostGroundingGraceTime: 0
+  DashSpeed: 50
+  DashDistance: 5
   isTouchingWall: 0
   isWallStickActive: 0
   wallStickTimer: 0
@@ -2502,6 +2504,9 @@ MonoBehaviour:
   MeshRoot: {fileID: 0}
   CameraFollowPoint: {fileID: 0}
   CrouchedCapsuleHeight: 1
+  FootstepAudioClips: []
+  audioSource: {fileID: 0}
+  FootstepSoundInterval: 0.5
   crouchParticleEffect: {fileID: 0}
 --- !u!136 &218902871
 CapsuleCollider:
@@ -6307,6 +6312,8 @@ MonoBehaviour:
   JumpScalableForwardSpeed: 0
   JumpPreGroundingGraceTime: 0.1
   JumpPostGroundingGraceTime: 0.1
+  DashSpeed: 50
+  DashDistance: 5
   isTouchingWall: 0
   isWallStickActive: 0
   wallStickTimer: 0
@@ -6322,6 +6329,9 @@ MonoBehaviour:
   MeshRoot: {fileID: 1352730089}
   CameraFollowPoint: {fileID: 1378670736}
   CrouchedCapsuleHeight: 0.4
+  FootstepAudioClips: []
+  audioSource: {fileID: 0}
+  FootstepSoundInterval: 0.5
   crouchParticleEffect: {fileID: 497267384}
 --- !u!95 &611456926
 Animator:
@@ -7983,6 +7993,8 @@ MonoBehaviour:
   JumpScalableForwardSpeed: 10
   JumpPreGroundingGraceTime: 0
   JumpPostGroundingGraceTime: 0
+  DashSpeed: 50
+  DashDistance: 5
   isTouchingWall: 0
   isWallStickActive: 0
   wallStickTimer: 0
@@ -7996,6 +8008,9 @@ MonoBehaviour:
   MeshRoot: {fileID: 0}
   CameraFollowPoint: {fileID: 0}
   CrouchedCapsuleHeight: 1
+  FootstepAudioClips: []
+  audioSource: {fileID: 0}
+  FootstepSoundInterval: 0.5
   crouchParticleEffect: {fileID: 0}
 --- !u!136 &846437973
 CapsuleCollider:
@@ -11907,6 +11922,10 @@ PrefabInstance:
       propertyPath: allSFX.Array.data[0]
       value: 
       objectReference: {fileID: 1645682664}
+    - target: {fileID: 3717812062644719095, guid: 7df20d7ff2726436f8ccfbbdd94b0ae8, type: 3}
+      propertyPath: levelTracks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4320069794534209795, guid: 7df20d7ff2726436f8ccfbbdd94b0ae8, type: 3}
       propertyPath: Loop
       value: 1
@@ -14120,6 +14139,8 @@ MonoBehaviour:
   OrbitSpeed: 5
   OnPlaygroundTeleportingZone: {fileID: 1275592751}
   OnPlanetTeleportingZone: {fileID: 0}
+  OnSecondPlaygroundTeleportingZone: {fileID: 0}
+  OnSecondPlanetTeleportingZone: {fileID: 0}
 --- !u!135 &1596112423
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18819,6 +18840,8 @@ MonoBehaviour:
   JumpScalableForwardSpeed: 10
   JumpPreGroundingGraceTime: 0
   JumpPostGroundingGraceTime: 0
+  DashSpeed: 50
+  DashDistance: 5
   isTouchingWall: 0
   isWallStickActive: 0
   wallStickTimer: 0
@@ -18832,6 +18855,9 @@ MonoBehaviour:
   MeshRoot: {fileID: 0}
   CameraFollowPoint: {fileID: 0}
   CrouchedCapsuleHeight: 1
+  FootstepAudioClips: []
+  audioSource: {fileID: 0}
+  FootstepSoundInterval: 0.5
   crouchParticleEffect: {fileID: 0}
 --- !u!136 &2140252333
 CapsuleCollider:
