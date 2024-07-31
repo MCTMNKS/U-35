@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
 
     public string[] LevelNames;
 
-    public GameObject optionsScreen;
+    public GameObject optionsScreen,ControlScreen;
     public GameObject levelScreen;
     // Start is called before the first frame update
     void Start()
@@ -84,6 +84,18 @@ public class MainMenu : MonoBehaviour
     {
          AudioManager.instance.PlaySFX(0);
         SceneManager.LoadScene(LevelNames[2]);
+    }
+    public void openControls()
+    {
+        AudioManager.instance.PlaySFX(0);
+        ControlScreen.SetActive(true);
+
+    }
+
+    public void closeControls()
+    {
+        AudioManager.instance.PlaySFX(0);
+        ControlScreen.SetActive(false);
     }
 }
 
