@@ -277,7 +277,10 @@ Sprint göz önünde bulundurulduğunda, yaşanan iletişim engellerine istinade
 #### İyileştirilecekler:
 - Tüm takım geliştirme sürecine dahil olduğundan, herkesin birbirinin yaptığını takip etmesi, geri bildirimler sağlaması ve entegre edilme sürecinin tüm takım üyeleri tarafından takip edilmesi sağlanarak oyun geliştirme süreci iyileştirilecektir.
 - İletişim kanalımız üzerinde yazan her şeyin takip edilmesi ve bu vesileyle herkesin güncel kalması, yazılanları kısa ve net aktararak ve takım arkadaşlarımızı kanal üzerinde etiketleyip gözden kaçırmamalarına yardımcı olarak sağlanacaktır.
-- Süreçte yer yer, gerek teknik gerek takımsal pürüzler yaşanabileceğinin farkında olarak bu tarz durumlara karşılık daha hızlı aksiyon alınacaktır. 
+- Süreçte yer yer, gerek teknik gerek takımsal pürüzler yaşanabileceğinin farkında olarak bu tarz durumlara karşılık daha hızlı aksiyon alınacaktır.
+
+  ### Diğer Notlar:
+  Sprint hakkında, yukarıda detaylıca verilen bilgilere eklenecek bir not yoktur.
 
 ## Sprint 3
 ### • Sprint Notları:
