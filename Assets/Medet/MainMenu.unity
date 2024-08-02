@@ -16450,11 +16450,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390068c599b5a49f9a53184001a7eea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLevel: Village
+  firstLevel: Stormfell
   LevelNames:
-  - Village
+  - Stormfell
   - Mountains
-  - Tunnels
+  - Dungeon
   optionsScreen: {fileID: 41460294}
   ControlScreen: {fileID: 754754060}
   levelScreen: {fileID: 1062236646}
