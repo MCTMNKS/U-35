@@ -287,7 +287,7 @@ User Story'ler slack platformu içinde oluşturulan "Product Backlog" listesinin
 ### • Sprint İçinde Tamamlanması Tahmin Edilen Puan:
 Sprint içi puan değerlendirmesi 130 olarak belirlenmiştir.
 ### • Puan Tamamlama Mantığı:
-Proje boyunca tamamlanması gereken backlog puanı 360'dır. Üçüncü -son- Sprint için bitirilmesi hedeflenen puan sayısı 130 olarak belirlenmiştir, üçüncü Sprint'in de tamamlanması sonucunda toplamda 360 puana ulaşılarak proje başında hedeflenen backlog puanına ulaşılıp proje tamamlanmıştır. 
+Proje boyunca tamamlanması gereken backlog puanı 360'dır. Üçüncü -son- Sprint için bitirilmesi hedeflenen puan sayısı 130 olarak belirlenmiştir, üçüncü Sprint'in de tamamlanması sonucunda toplamda 360 puana ulaşılarak proje başında hedeflenen backlog puanına ulaşılıp proje tamamlanmıştır. Sprint sonunda istenen mekanikler taski eksik kaldı ancak tamamlanamayan puanlar yerine inventory sistemi gibi diğer görevler -backlog üzerinden de görülebileceği gibi- tamamlandı ve puan açığı kapatıldı.
 ### • Backlog Düzeni ve Story Seçimleri: 
 Backlogun slack platformu üzerinde hazırlanmasına karar verilmiştir. Üçüncü sprint backlogu, ilk iki sprintin ardından, projenin bitirilmesi için tamamlanması gereken story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur.
 ### • Daily Scrum: 
@@ -337,13 +337,23 @@ Bunlara ek olarak, oyunumuza ilişkin Analytics Dashboard bu şekildedir: (Ana m
 
 #### Tamamlanan İşler: 
 Kullanıcı hikayeleri ve görevler, Slack platformunda yer alan görevlerin içinde bulunuyor. Bu dokümantasyonda, son sprintte tamamlanan görevler belirtilecek. Bu sprintte en başta yapılması planlanan 
-   XXXX
+  - son seviye olan Dungeons seviyesinin eklenmesi
+  - UI/UX tamamlanması
+  - can sistemi eklenmesi
+  - spawn pointler vs. gibi eksiklerin tamamlanması
+  - seslerin eklenmesi
+  - karakter değiştirme ekranının eklenmesi
+  - aksiyon mekaniğinin eklenmesi (saldırı ve düşman mekaniği)
      
-görevleri tamamlandı ya da bir kısmı tamamlandı. Sprint sonunda istenen mekanikler taski eksik kaldı ancak tamamlanamayan puanlar yerine inventory sistemi gibi diğer görevler -backlog üzerinden de görülebileceği gibi- tamamlandı ve puan açığı kapatıldı.
+görevlerinden değişikliğe gidilen hepsi tamamlandı. Developerlardan bir tanesi son sprintte görevine yerine getiremediği için aksiyon mekaniği eklenemedi, fakat Product Owner yeni görevler ekleyip bunları yerine getirmesiyle proje tamamlandı. (Ekstra ara sahne eklenmesi, planların dışında olan Game Analytics eklendi, var olan düşmanın entegre edilmesi görevleri eklendi ve tamamlandı.) Sprint sonunda istenen mekanikler taski eksik kaldı ancak tamamlanamayan puanlar yerine inventory sistemi gibi diğer görevler -backlog üzerinden de görülebileceği gibi- tamamlandı ve puan açığı kapatıldı.
 
 Bahsi geçen tamamlanan işlerin, Product Owner’ın kabul kriterlerine göre durumu şu şekildedir:
- 
-  XXXX
+ - Dungeons seviyesi: Oynanışın demo olması sebebiyle bazı anahtarlar kapının yanına yerleştirildi. Ancak bu bölümler yine de oynanabilir seviyelerdir. (Sahnenin içinde 2 tane Dungeons seviyesi bulunuyor.)
+ - UI/UX: Bu görev yerine getirildi. Full HD çözünürlük için sorunsuz bir şekilde entegresi sağlandı ancak geniş ekran çözünürlükler için düzenlenmesi gerekmektedir.
+ - Game Analytics: Sorunsuz bir şekilde çalışıyor. Kabul kriterleri karşılanıyor.
+ - Can sistemi: Herhangi bir bug yok, game over ekranına yönlendirmeyi gerçekleştiriyor. Renkleri seviyelere uygun bir biçimde tasarlandı.
+ - Spawn pointler: Her spawn point atandı.
+Level design sorunsuz bir şekilde, hikayeye uygun biçimde işlenmiştir. 
   
 #### Gösterim:
 Sprint esnasında takım üyeleri; Discord platformu aracılığıyla, takım toplantılarında ve Sprint Review esnasında diğer takım üyelerini oyunun güncel durumları ile alakalı bilgilendirmiştir. Sprint sonunda oyunun güncel durumu, ilgili alt başlık altında -Ürün Durumu- ekran görüntüleri ile yer almaktadır. 
@@ -353,14 +363,14 @@ Kişisel yoğunluklar, takım içi iletişim ve koordinasyon problemleri, karş�
 
 #### Engeller: 
 Sprint esnasında, bazı görevlerin tamamlanması esnasında çeşitli engellerle karşılaşılmıştır ve aşağıda listelenen durumlar yaşanmıştır.
- - Son sprint'te ekipte 2 takım üyesi developer olarak çalıştı, dolayısıyla oyunun teknik açıdan tamamlanması beklenenden ve daha önce tamamlanan sprintlerden daha uzun zaman aldı.
+ - Son sprint'te ekipte -developer arkadaşlarımızdan Mecit'in kişisel bir sebepten dolayı sprint esnasında proje geliştirme sürecine katılım sağlayamaması sebebi ile- 2 takım üyesi developer olarak çalıştı, dolayısıyla oyunun teknik açıdan tamamlanması beklenenden ve daha önce tamamlanan sprintlerden daha uzun zaman aldı.
  -  Oyunun son halinin GitHub'a yüklenmesi, daha önceden tamamlanan tasklerin birbirlerine entegresi zaman aldı.
  
 #### Gelecek Sprint İçin: 
 Bu sprint, projenin son sprintidir. Dolayısıyla ilerleyen zamanlar için herhangi bir karar alınmamıştır.
 
 #### Geri Bildirim: 
-XXXX
+Oyunun level dizayn, ortam tasarımı, hikaye, UI tasarım, ses ve benzeri açısından kabul kriterlerine uygun tamamlanması Product Owner'ı memnun etmiştir. Ancak takımdaki üyelerin kişisel yoğunlukları ve bazılarının hiç dönüş yapmaması geliştirme sürecinde sıkıntılar yarattı. Ancak yine de ürün zamanında tamamlanıp teslim edilmiştir. 
 
 ### •Sprint Retrospective:
 #### İyi Gidenler:
@@ -376,5 +386,9 @@ XXXX
 Tamamladığımız sprinti takip eden bir diğeri daha olmadığı için gelecek sprinte dair iyileştirilecek noktalar belirlenmemiştir. Ancak projenin genelini incelediğimizde, takım içinde düzenli ve sık iletişim kurulması iyileştirilmesi gereken noktalar arasında öne çıkmaktadır.
 
 ### •Diğer Notlar:
-Ekleyeceğimiz bir durum veya not yoktur.
+- Devlog videomuza buradan ulaşabilirsiniz: [Echoes of Stormfell - Kısa bir devlog](https://youtu.be/0AhaUI0JYGc)
+- Oyun Bootcamp aşamasında olduğundan dolayı bazı bölümler atlanabiliyor. Örneğin Dungeon bölümünde, anahtarlar normal şartlarda dungeonların sonunda da mevcut.Ancak jürilerimizin oyunu oynamak istemesi durumu için,oyunun kolaylaşması amacıyla anahtarlar ayrıca "altar"ların olduğu bölüme de eklendi.
+
+- Proje esnasında geliştirilen ancak oyunda kullanılmayan animasyonlara ve kodlarına buradan ulaşabilirsiniz: 
+[Kullanılmayan Animasyonlar](https://drive.google.com/file/d/10HAmRX9VY_AAEPCS13aCG2J0n9TJppGQ/view?usp=share_link)
 
