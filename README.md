@@ -308,12 +308,15 @@ Sprint board ekran görüntüleri:
 
 ### • Ürün Durumu:
 Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda paylaşılan ekran görüntüleri ve video linkleri ile gösterilmiştir.
-(Echoes of Stormfell Gameplay)[https://www.youtube.com/watch?v=UCS_W-zP4SE]
-(Echoes of Stormfell Pre-Final Test Gameplay)[https://www.youtube.com/watch?v=YY5IcZ4ifRU]
-(Game Over Mekaniği)[https://www.youtube.com/watch?v=VRNNflazllE&feature=youtu.be]
+
+
+[Echoes of Stormfell Gameplay](https://www.youtube.com/watch?v=UCS_W-zP4SE)
+[Echoes of Stormfell Pre-Final Test Gameplay](https://www.youtube.com/watch?v=YY5IcZ4ifRU)
+[Game Over Mekaniği](https://www.youtube.com/watch?v=VRNNflazllE&feature=youtu.be)
 <img width="795" alt="finalmenu" src="https://github.com/user-attachments/assets/4ad98984-069f-41fe-8be3-a9bf6850cd71">
 <img width="795" alt="bingnid" src="https://github.com/user-attachments/assets/0193395e-3318-4f0f-a476-47891006ec1b">
 <img width="1432" alt="Ekran Resmi 2024-08-02 20 26 14" src="https://github.com/user-attachments/assets/08ca6708-9101-4d20-909a-4cd3eb528921">
+
 
 
 Bunlara ek olarak, oyunumuza ilişkin Analytics Dashboard bu şekildedir: (Ana menüde kullanıcıdan "consent" isteniyor.)
