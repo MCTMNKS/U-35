@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427266443dd94264a4bbf81ec0c4329, type: 3}
+  m_Name: KarianCT
+  m_EditorClassIdentifier: 
+  speakerName: Karian
+  npcPortrait: {fileID: 21300000, guid: 306f4374bd26293479092ce274c36bda, type: 3}
+  dialougueSound: {fileID: 0}
+  paragpraphs:
+  - Atlas! How...?
+  - I was so scared. I- I'm so sorry. It's all my fault, i caused all this. I didn't
+    mean to, i just wanted to  prove myself. I-
+  - I wanted to show them that i could be just like you, i thought the ring could've
+    helped me...
+  - 'The spirits were very angry, a storm came. The village... I causedthis magic
+    disaster. They got hurt because of me. '
+  - The spirits told me that i had to prove myself to earn the ring but i just wanted
+    to leave and they got angry.
+  - Will you forgive me Atlas?
+  - Please forgive me Atlas.
+  - Atlas...
