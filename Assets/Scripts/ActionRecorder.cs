@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+// Bu script oyun içindeki oyuncunun hareketlerini kaydedip düþman üzerinde kullanmak için yazýlmýþtýr.
 public class ActionRecorder : MonoBehaviour
 {
     public struct PlayerAction

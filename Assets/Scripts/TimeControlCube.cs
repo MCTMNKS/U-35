@@ -1,5 +1,5 @@
 using UnityEngine;
-
+// Bu script, oyuncunun bir TimeControlCube'nin içine girdiðinde oyunun zamanýný yavaþlatýp ve oyuncu çýktýðýnda zamaný normale döndürmek için yazýlmýþtýr.
 public class TimeControlCube : MonoBehaviour
 {
     // Define the slow down factor
