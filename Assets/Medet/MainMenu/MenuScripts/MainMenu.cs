@@ -11,8 +11,11 @@ public class MainMenu : MonoBehaviour
 
     public string[] LevelNames;
 
-    public GameObject optionsScreen,ControlScreen;
+    public GameObject optionsScreen,ControlScreen,DataCollection;
     public GameObject levelScreen;
+
+    public Toggle toggle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,9 @@ public class MainMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         //menu müziği
         AudioManager.instance.PlayMenuMusic();
+        
+
+        // Add a listener to call the OnToggleValueChanged method when the toggle's state changes
     }
 
     // Update is called once per frame
@@ -97,5 +103,22 @@ public class MainMenu : MonoBehaviour
         AudioManager.instance.PlaySFX(0);
         ControlScreen.SetActive(false);
     }
+
+    public void Consent()
+    {
+        if(toggle.isOn)
+        {
+        //data consent
+        DataCollection.SetActive(true);
+
+        }
+        else if(!toggle.isOn)
+        {
+            DataCollection.SetActive(false);
+        }
+    }
+
+    
+
 }
 

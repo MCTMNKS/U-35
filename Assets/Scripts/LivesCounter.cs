@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using XEntity.InventoryItemSystem;
 public class LivesCounter : MonoBehaviour
@@ -16,6 +17,8 @@ public class LivesCounter : MonoBehaviour
     public ParticleSystem loseLifeParticles; //spawn particles when player loses a life
 
     private Coroutine[] heartbeats; // Array to store heartbeat Coroutines
+
+    public GameObject gameOverScreen;
 
     void Start()
     {
@@ -60,7 +63,8 @@ public class LivesCounter : MonoBehaviour
         }
         else
         {
-            // Game Over
+            gameOverScreen.SetActive(true);
+
             Debug.Log("Game Over");
         }
     }
@@ -155,5 +159,20 @@ public class LivesCounter : MonoBehaviour
                 yield return null;
             }
         }
+
+
+    
+    }
+
+    public void quitToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("I quit the game");
     }
 }
