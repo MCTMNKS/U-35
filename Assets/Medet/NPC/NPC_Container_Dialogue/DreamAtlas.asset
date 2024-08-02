@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427266443dd94264a4bbf81ec0c4329, type: 3}
+  m_Name: DreamAtlas
+  m_EditorClassIdentifier: 
+  speakerName: Me.
+  npcPortrait: {fileID: 21300000, guid: d70a2ff1c98ae234fad766faa1fa1f47, type: 3}
+  dialougueSound: {fileID: 0}
+  paragpraphs:
+  - How many stars do you think is out there in that space ocean Karian?
+  - I wonder if we'll be able to grow up together... I'll need to leave soon.
+  - I wish the war never happened...
+  - The war? No, you need to wake up Atlas.
+  - That was a hard fall wasnt it?
+  - 
