@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: U - 35
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: 55fa7efec14169f499748cb5f9388a0a, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -160,7 +160,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Standalone: com.DefaultCompany.U---35
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -694,8 +695,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: U - 35
-  metroPackageVersion: 
+  metroPackageName: U-35
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -703,7 +704,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: U - 35
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: U - 35
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
