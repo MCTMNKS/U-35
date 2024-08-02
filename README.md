@@ -291,9 +291,9 @@ Proje boyunca tamamlanması gereken backlog puanı 360'dır. Üçüncü -son- Sp
 ### • Backlog Düzeni ve Story Seçimleri: 
 Backlogun slack platformu üzerinde hazırlanmasına karar verilmiştir. Üçüncü sprint backlogu, ilk iki sprintin ardından, projenin bitirilmesi için tamamlanması gereken story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur.
 ### • Daily Scrum: 
-Daily Scrum toplantılarının Discord platformu üzerinden yapılmasına karar verilmiştir. Takım üyeleri günlük olarak ilerlemelerini ana iletişim aracı olan Discord üzerinden #daily-scrum kanalı aracılığıyla yazılı olarak paylaşmıştır. ⁠
+Daily Scrum toplantılarının Discord platformu üzerinden yapılmasına karar verilmiştir. Takım üyeleri günlük olarak ilerlemelerini ana iletişim aracı olan Discord üzerinden #daily-scrum kanalı aracılığıyla yazılı olarak paylaşmıştır. ⁠Tüm konuşmalara [Discord davet linki](https://discord.gg/7A7J99V5) linki üzerinden discorda bağlanarak ulaşılabilinir.
 
-Daily scrum notları şu dosya üzerinden incelenebilir:[Daily Scrum Meeting Notları - Sprint3](https://github.com/user-attachments/files/16459587/DailyScrumMeetingNotesSprint3.docx)
+Ayrıca daily scrum notları şu dosya üzerinden incelenebilir:[Daily Scrum Meeting Notları - Sprint3](https://github.com/user-attachments/files/16459587/DailyScrumMeetingNotesSprint3.docx)
 
 
 
