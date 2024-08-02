@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427266443dd94264a4bbf81ec0c4329, type: 3}
+  m_Name: WomanMountain
+  m_EditorClassIdentifier: 
+  speakerName: Frida
+  npcPortrait: {fileID: 21300000, guid: 52e1ec2ea31f9c04c800c7c998bad9c8, type: 3}
+  dialougueSound: {fileID: 0}
+  paragpraphs:
+  - My head is killing me... How long I've been here?
+  - Oh, you are... Atlas? Are you real? Am i starting to hallucinate now? You left
+    the village a long time ago, how can you be here?
+  - Ow, that pinch hurt. I don't know where we are, i've been through the worst,
+    be nice.
+  - Magic disaster and teleportations? That explains how i ended up here... I can
+    go back through that gate? Okay...
+  - Thanks for helping me, i need to go back to the village and find my child.
+  - 
