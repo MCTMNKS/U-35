@@ -300,12 +300,24 @@ Ayrıca daily scrum notları şu dosya üzerinden incelenebilir:[Daily Scrum Mee
 
 ### • Sprint Board Update:
 Sprint board ekran görüntüleri:
+![spboard](https://github.com/user-attachments/assets/473c4da1-d999-435a-ad3e-357d85eb6c16)
+![image2](https://github.com/user-attachments/assets/42da7f66-d82c-43b5-94e9-2cf361353bb4)
 
 
 
 
 ### • Ürün Durumu:
 Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda paylaşılan ekran görüntüleri ve video linkleri ile gösterilmiştir.
+(Echoes of Stormfell Gameplay)[https://www.youtube.com/watch?v=UCS_W-zP4SE]
+(Echoes of Stormfell Pre-Final Test Gameplay)[https://www.youtube.com/watch?v=YY5IcZ4ifRU]
+(Game Over Mekaniği)[https://www.youtube.com/watch?v=VRNNflazllE&feature=youtu.be]
+<img width="795" alt="finalmenu" src="https://github.com/user-attachments/assets/4ad98984-069f-41fe-8be3-a9bf6850cd71">
+<img width="795" alt="bingnid" src="https://github.com/user-attachments/assets/0193395e-3318-4f0f-a476-47891006ec1b">
+<img width="1432" alt="Ekran Resmi 2024-08-02 20 26 14" src="https://github.com/user-attachments/assets/08ca6708-9101-4d20-909a-4cd3eb528921">
+
+
+Bunlara ek olarak, oyunumuza ilişkin Analytics Dashboard bu şekildedir: (Ana menüde kullanıcıdan "consent" isteniyor.)
+![analytics](https://github.com/user-attachments/assets/5388e509-6f59-4e7d-8173-7f3b3683ce11)
 
 
 
@@ -324,7 +336,7 @@ Sprint sonunda geliştirilen oyunun içinde bulunduğu güncel durum aşağıda 
 Kullanıcı hikayeleri ve görevler, Slack platformunda yer alan görevlerin içinde bulunuyor. Bu dokümantasyonda, son sprintte tamamlanan görevler belirtilecek. Bu sprintte en başta yapılması planlanan 
    XXXX
      
-görevleri tamamlandı ya da bir kısmı tamamlandı.
+görevleri tamamlandı ya da bir kısmı tamamlandı. Sprint sonunda istenen mekanikler taski eksik kaldı ancak tamamlanamayan puanlar yerine inventory sistemi gibi diğer görevler -backlog üzerinden de görülebileceği gibi- tamamlandı ve puan açığı kapatıldı.
 
 Bahsi geçen tamamlanan işlerin, Product Owner’ın kabul kriterlerine göre durumu şu şekildedir:
  
@@ -338,7 +350,8 @@ Kişisel yoğunluklar, takım içi iletişim ve koordinasyon problemleri, karş�
 
 #### Engeller: 
 Sprint esnasında, bazı görevlerin tamamlanması esnasında çeşitli engellerle karşılaşılmıştır ve aşağıda listelenen durumlar yaşanmıştır.
- XXXX
+ - Son sprint'te ekipte 2 takım üyesi developer olarak çalıştı, dolayısıyla oyunun teknik açıdan tamamlanması beklenenden ve daha önce tamamlanan sprintlerden daha uzun zaman aldı.
+ -  Oyunun son halinin GitHub'a yüklenmesi, daha önceden tamamlanan tasklerin birbirlerine entegresi zaman aldı.
  
 #### Gelecek Sprint İçin: 
 Bu sprint, projenin son sprintidir. Dolayısıyla ilerleyen zamanlar için herhangi bir karar alınmamıştır.
