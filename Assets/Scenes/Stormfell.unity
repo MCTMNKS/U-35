@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactSprite: {fileID: 1480693073}
-  DialogueText: {fileID: 11400000, guid: 8ce4b4266d5ea6e43b81fb8cf0e57e91, type: 2}
+  DialogueText: {fileID: 11400000, guid: c614aa759b1bc8d4a8b1e935feef0a06, type: 2}
   dialogueController: {fileID: 350619778}
 --- !u!135 &48396402
 SphereCollider:
@@ -10822,7 +10822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactSprite: {fileID: 1480693073}
-  DialogueText: {fileID: 11400000, guid: 9179e5be53c110848ab5af47b01b236d, type: 2}
+  DialogueText: {fileID: 11400000, guid: 6884a80f4a2eed447b34d2e1bd8acc4a, type: 2}
   dialogueController: {fileID: 350619778}
 --- !u!1001 &445204464
 PrefabInstance:
