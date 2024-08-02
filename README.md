@@ -4,7 +4,7 @@
 Unity-35 Takımı
 
 ## Takım Üyeleri
-* Mahmut Furkan Koçak - Product Owner
+* Mahmut Furkan Koçak - Product Owner / De
 * Melis Karadağ - Scrum Master
 * Medet Çınar - Developer
 * Mecit Menekşe - Developer
@@ -13,16 +13,15 @@ Unity-35 Takımı
 Echoes of Stormfell
 
 ## Oyunun Açıklaması
-Echoes of Stormfell, ana karakterin kendini içinde bulduğu uzun bir maceraya oyuncumuzun eşlik ettiği bir 3D, üçüncü şahıs platformer/aksiyon oyunudur.
+Echoes of Stormfell, ana karakterin kendini içinde bulduğu uzun bir maceraya oyuncumuzun eşlik ettiği bir 3D, üçüncü şahıs platformer oyunudur.
 
 ## Oyunun Hikayesi
-EKLENECEK
+Atlas, uzun bir yolculuktan sonra evine döndü. Onu denizde sarsan fırtınanın etkisi yeterli değilmiş gibi, evinde yaşanan sihir felaketi sonucu kardeşini Karian'ın ve köydeki bazı insanların kaybolduğunu öğrenen Atla ınları bulabilmek için uzun bir yolculuğa çıkar. Atlas'ı eski kale ve tapınaktaki engeller ve onun peşini bırakmayan bir düşman bekliyor, bunları aşıp Karian'ı kurtarabilecek mi?
 
 ## Oyunun Özellikleri
 * Macera
 * Low Poly
 * Platformer
-* Aksiyon
 
 ## Hedef Kitle
 * Casual game (tatlı grafikler, basitlik, kısa süreli oynanış)
