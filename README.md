@@ -4,9 +4,9 @@
 Unity-35 Takımı
 
 ## Takım Üyeleri
-* Mahmut Furkan Koçak - Product Owner / De
+* Mahmut Furkan Koçak - Product Owner / Lead Developer
 * Melis Karadağ - Scrum Master
-* Medet Çınar - Developer
+* Medet Çınar - Developer (UI/UX)
 * Mecit Menekşe - Developer
 
 ## Oyun İsmi
