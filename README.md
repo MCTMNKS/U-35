@@ -287,7 +287,7 @@ User Story'ler slack platformu içinde oluşturulan "Product Backlog" listesinin
 ### • Sprint İçinde Tamamlanması Tahmin Edilen Puan:
 Sprint içi puan değerlendirmesi 130 olarak belirlenmiştir.
 ### • Puan Tamamlama Mantığı:
-Proje boyunca tamamlanması gereken backlog puanı 360'dır. Üçüncü -son- Sprint için bitirilmesi hedeflenen puan sayısı 130 olarak belirlenmiştir, üçüncü Sprint'in de tamamlanması sonucunda toplamda 360 puana ulaşılarak proje başında hedeflenen backlog puanına ulaşılıp proje tamamlanmıştır. 
+Proje boyunca tamamlanması gereken backlog puanı 360'dır. Üçüncü -son- Sprint için bitirilmesi hedeflenen puan sayısı 130 olarak belirlenmiştir, üçüncü Sprint'in de tamamlanması sonucunda toplamda 360 puana ulaşılarak proje başında hedeflenen backlog puanına ulaşılıp proje tamamlanmıştır. Sprint sonunda istenen mekanikler taski eksik kaldı ancak tamamlanamayan puanlar yerine inventory sistemi gibi diğer görevler -backlog üzerinden de görülebileceği gibi- tamamlandı ve puan açığı kapatıldı.
 ### • Backlog Düzeni ve Story Seçimleri: 
 Backlogun slack platformu üzerinde hazırlanmasına karar verilmiştir. Üçüncü sprint backlogu, ilk iki sprintin ardından, projenin bitirilmesi için tamamlanması gereken story'lere göre düzenlenmiştir. Sprint başına tahmin edilen puan sayısını geçmeyecek şekilde seçimler yapılmaktadır. Story başına çıkan tahmin puanı, toplam puanın yarısından az tutulmuştur.
 ### • Daily Scrum: 
