@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427266443dd94264a4bbf81ec0c4329, type: 3}
+  m_Name: TutClimb
+  m_EditorClassIdentifier: 
+  speakerName: Tutolue
+  npcPortrait: {fileID: 21300000, guid: fde676ef3c41e514da8c9099230e0630, type: 3}
+  dialougueSound: {fileID: 0}
+  paragpraphs:
+  - To climb the vines, jump towards the vines and spam "F" key when are staring
+    at them when you are next to them to hold  onto it.
+  - You have 5 seconds to lose your grasp when you are climbing. You can try to hold
+    the vines again if that happens.
+  - Get the key in first person mode (RMB). You can use it on the door by removing
+    the key from your inventory and  carrying it to the door.
+  - Oh. passage is too narrow? You have the ability to shrink! Press "C" and see
+    what happens.
+  - 

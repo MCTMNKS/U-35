@@ -15,6 +15,6 @@ MonoBehaviour:
   type: 0
   itemName: Gate Key
   itemPerSlot: 1
-  icon: {fileID: 21300000, guid: 78955dbdc13d9264ca5c08d52fe27459, type: 3}
+  icon: {fileID: 21300000, guid: b7f285914ef38aa47bc03fb87a2b2dff, type: 3}
   prefab: {fileID: 8829837453391720766, guid: 728136093dc5441a9ae91750aea83aea, type: 3}
   itemInformation: Probably the key to the mysterious dungeon near me.

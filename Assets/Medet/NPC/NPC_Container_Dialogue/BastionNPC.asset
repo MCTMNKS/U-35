@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427266443dd94264a4bbf81ec0c4329, type: 3}
+  m_Name: BastionNPC
+  m_EditorClassIdentifier: 
+  speakerName: Bastion
+  npcPortrait: {fileID: 21300000, guid: 5f037b27f075f18498e37a80e776173f, type: 3}
+  dialougueSound: {fileID: 0}
+  paragpraphs:
+  - '... Atlas, look at you! You''ve changed so much, couldn''t even recognize you
+    for a second there. '
+  - 'I take that ship of yours couldn''t handle the big storm. It was terrible, you
+    should hurry to the village and check up with the others. '
+  - You can use the old village road, starts right back at where your ship crashed.
+    You might need to jump around a bit, get across the river.
+  - Also, if you feel creative you can use these logs i was chopping before the storm
+    to make a bridge back there.
+  - I'm trying to get myself together at the moment. I'll get back there later.
+  - 

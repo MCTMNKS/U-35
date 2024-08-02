@@ -44,7 +44,7 @@ Material:
     - _Vector1_2: 0
     m_Colors:
     - _Color: {r: 0.645283, g: 0.64228725, b: 0, a: 0}
-    - _Color_1: {r: 1, g: 0.65642214, b: 0.20784312, a: 0.8392157}
+    - _Color_1: {r: 1, g: 0.69396746, b: 0.20784312, a: 0.8392157}
   m_BuildTextureStacks: []
 --- !u!114 &5882357842733881685
 MonoBehaviour:

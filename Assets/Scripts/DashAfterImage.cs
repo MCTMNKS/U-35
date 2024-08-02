@@ -57,8 +57,9 @@ public class DashAfterImage : MonoBehaviour
             yield return null;
         }
 
-        Destroy(renderer.gameObject);
+        Destroy(renderer.transform.root.gameObject); // Destroy the parent game object
     }
+
 
     void SetMaterialAlpha(Material[] materials, float alpha)
     {

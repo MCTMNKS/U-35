@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using XEntity.InventoryItemSystem;
 using KinematicCharacterController;
 using System;
 
@@ -178,6 +179,20 @@ namespace KinematicCharacterController.Examples
             originalScale = MeshRoot.localScale; // Store the original scale
             audioSource = GetComponent<AudioSource>();
 
+            // Subscribe to the onBlueConsumed event
+            ItemManager.Instance.onBlueConsumed.AddListener(OnBlueConsumed);
+
+        }
+        private void OnBlueConsumed()
+        {
+            // Change the jump up speed to 20
+            JumpUpSpeed = 20f;
+            JumpScalableForwardSpeed = 20f;
+        }
+        private void OnDestroy()
+        {
+            // Unsubscribe from the onBlueConsumed event when the object is destroyed
+            ItemManager.Instance.onBlueConsumed.RemoveListener(OnBlueConsumed);
         }
         private void Awake()
         {
@@ -422,7 +437,7 @@ namespace KinematicCharacterController.Examples
                         }
 
                         //Sprinting input
-                        _isSprinting = inputs.Sprint; // Add this line
+                        _isSprinting = inputs.Sprint;
 
                         // Jumping input
                         if (inputs.JumpDown)

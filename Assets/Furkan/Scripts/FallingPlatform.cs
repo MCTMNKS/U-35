@@ -1,5 +1,5 @@
-using System.Collections;
 using UnityEngine;
+using System.Collections;
 
 public class FallingPlatform : MonoBehaviour
 {
@@ -12,6 +12,7 @@ public class FallingPlatform : MonoBehaviour
     public AudioSource audioSource; // Add this line
 
     private Vector3 originalPosition;
+    private Quaternion originalRotation; // Store the original rotation
     private Rigidbody rb;
     private Material material;
     private Color originalColor; // Original base color
@@ -22,6 +23,7 @@ public class FallingPlatform : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         material = GetComponent<Renderer>().material;
         originalPosition = transform.position;
+        originalRotation = transform.rotation; // Store the original rotation
         originalColor = material.GetColor("_BaseColor"); // Store the original base color
         originalEmissionColor = material.GetColor("_EmissionColor"); // Store the original emission color
         audioSource = GetComponent<AudioSource>(); // And this line
@@ -40,7 +42,6 @@ public class FallingPlatform : MonoBehaviour
             StartCoroutine(Shake());
         }
     }
-
 
     IEnumerator Shake()
     {
@@ -68,6 +69,7 @@ public class FallingPlatform : MonoBehaviour
 
         rb.isKinematic = true;
         transform.position = originalPosition;
+        transform.rotation = originalRotation; // Reset the rotation
         material.SetColor("_BaseColor", originalColor); // Reset the base color
         material.SetColor("_EmissionColor", originalEmissionColor); // Reset the emission color
     }

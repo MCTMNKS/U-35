@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnableNPC : MonoBehaviour
 {
@@ -25,22 +26,29 @@ public class EnableNPC : MonoBehaviour
                 if (!npcRenderer.enabled)
                 {
                     npcRenderer.enabled = true;
-                    particleEffect.Play();
+                    StartCoroutine(PlayParticleEffect());
                 }
             }
         }
         else
         {
-            // If the player is too far away, disable the SkinnedMeshRenderers and play the particle effect.
+            // If the player is too far away, disable the SkinnedMeshRenderers and stop the particle effect.
             foreach (SkinnedMeshRenderer npcRenderer in npcRenderers)
             {
                 if (npcRenderer.enabled)
                 {
                     npcRenderer.enabled = false;
-                    particleEffect.Play();
+                    particleEffect.Stop();
                 }
             }
         }
+    }
+
+    IEnumerator PlayParticleEffect()
+    {
+        particleEffect.Play();
+        yield return new WaitForSeconds(2);
+        particleEffect.Stop();
     }
 }
 

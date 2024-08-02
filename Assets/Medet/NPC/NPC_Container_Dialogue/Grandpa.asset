@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427266443dd94264a4bbf81ec0c4329, type: 3}
+  m_Name: Grandpa
+  m_EditorClassIdentifier: 
+  speakerName: Grandpa
+  npcPortrait: {fileID: 21300000, guid: 8c25f237af70f8d40881101fa8b74363, type: 3}
+  dialougueSound: {fileID: 0}
+  paragpraphs:
+  - 'Atlas! You are back. I want to ask how you''re doing but I have some important
+    news for you. '
+  - Your brother, Karian disappeared last night. We wanted to check the old castle
+    but we've encountered a magic disaster, some of the townsfolk disappeared too
+    at that moment.
+  - The town didn't get affected much but there was a storm, and something happened
+    to the river and ocean water as well. It causes weird teleportations.
+  - I need you to help me. I've locked old castle's door so that the village would
+    be safe, my hands are tied here. I need to protect the village but we can't leave
+    Karian alone!
+  - I left the key to the castle at the pink rocks pond to keep it safe. Just climb
+    the vines, you'll find it there. Take care.
+  - Good luck...

@@ -1,0 +1,2 @@
+Assets/Dungeons.unity filter=lfs diff=lfs merge=lfs -text
+Scenes/*.unity filter=lfs diff=lfs merge=lfs -text

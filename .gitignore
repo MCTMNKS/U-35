@@ -70,3 +70,14 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Furkan/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset
+Assets/Furkan/Settings/High_PipelineAsset.asset
+Assets/Furkan/Settings/Low_PipelineAsset.asset
+Assets/Furkan/Settings/Medium_PipelineAsset.asset
+Assets/Furkan/Settings/Ultra_PipelineAsset.asset
+Assets/Furkan/Settings/Very High_PipelineAsset.asset
+Assets/Furkan/Settings/Very Low_PipelineAsset.asset
+Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+ProjectSettings/BurstAotSettings_StandaloneWindows.json
+ProjectSettings/CommonBurstAotSettings.json

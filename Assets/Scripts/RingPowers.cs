@@ -26,6 +26,15 @@ public class DoubleJumpPowerUp : MonoBehaviour
                 camera.EnableDashPower();
             }
 
+            // Get the DashAfterImage component
+            DashAfterImage dashAfterImage = other.gameObject.GetComponent<DashAfterImage>();
+
+            // Enable the DashAfterImage script
+            if (dashAfterImage != null)
+            {
+                dashAfterImage.enabled = true;
+            }
+
             // Destroy the power-up object
             Destroy(gameObject);
         }

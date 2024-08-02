@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427266443dd94264a4bbf81ec0c4329, type: 3}
+  m_Name: WomanVillage
+  m_EditorClassIdentifier: 
+  speakerName: Freya
+  npcPortrait: {fileID: 21300000, guid: e8912cd3d7227e049b9d660ab059a151, type: 3}
+  dialougueSound: {fileID: 0}
+  paragpraphs:
+  - You are back! Karian came with you right? There was a terrible storm out there
+    because of the magic disaster.
+  - Grandpa is waiting at the port. He was worried because of the storm caused by
+    the disaster, you should check on him.
+  - You remember the port right? Right after you pass those two houses. Please hurry!
+    He's got important news for you.
+  - ...

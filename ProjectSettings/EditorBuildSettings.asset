@@ -9,12 +9,15 @@ EditorBuildSettings:
     path: Assets/Medet/MainMenu.unity
     guid: 581efbc18c008412cbcc116d54cee6bd
   - enabled: 1
+    path: Assets/Scenes/Stormfell.unity
+    guid: ed5bde9c178d33b4f844fd09592bda3d
+  - enabled: 0
     path: Assets/Village.unity
     guid: 49c21577d8fcba049bf2f94ab33e2dc2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mountains.unity
     guid: 3b3b2255e321f1f47b5155bd291cc9bd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Gridness Studios/Elementary Dungeon Pack Lite/Demo Scene/Tunnels.unity
     guid: 6dbbc23a58ac71844802e1b08a245a0f
   m_configObjects: {}

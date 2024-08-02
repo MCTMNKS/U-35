@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -2584143368767192832}
   - component: {fileID: -6707608274963948309}
   - component: {fileID: -4611913631025211170}
-  - component: {fileID: -5111257964076324816}
+  - component: {fileID: -7494365712899073974}
   m_Layer: 3
   m_Name: Key2
   m_TagString: Untagged
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorSound: {fileID: 8300000, guid: 1d9b6ba9c1b871e4da40b79d7ca76be5, type: 3}
---- !u!82 &-5111257964076324816
+--- !u!82 &-7494365712899073974
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

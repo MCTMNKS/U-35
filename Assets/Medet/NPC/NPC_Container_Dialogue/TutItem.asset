@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f427266443dd94264a4bbf81ec0c4329, type: 3}
+  m_Name: TutItem
+  m_EditorClassIdentifier: 
+  speakerName: Tutolue
+  npcPortrait: {fileID: 21300000, guid: fde676ef3c41e514da8c9099230e0630, type: 3}
+  dialougueSound: {fileID: 0}
+  paragpraphs:
+  - Oof. Something is wrong with the water, must've been that magic disaster's doing
+    or something. Heard the villagers talking about it.
+  - Looks like you can use some apples. When you are in the first person mode (RMB)
+    you can pick items with pressing the scroll button when looking at them.
+  - Open your Inventory by pressing "I". Press "esc" to toggle mouse cursor. Now
+    you can click on the apple and consume it to heal.
+  - Pfft
