@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;  // Import the Unity Analytics namespace
+using System.Collections.Generic;
 
 public class SceneChanger : MonoBehaviour
 {
@@ -9,8 +11,9 @@ public class SceneChanger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Check if the colliding object is the character.
-        if (other.gameObject.tag == "ExampleCharacter")
+        if (other.gameObject.CompareTag("ExampleCharacter"))
         {
+            LogSceneCompletion(sceneToLoad);
             LoadScene(sceneToLoad);
         }
     }
@@ -25,6 +28,18 @@ public class SceneChanger : MonoBehaviour
         }
 
         SceneManager.LoadScene(sceneName);
+    }
+
+    private void LogSceneCompletion(string sceneName)
+    {
+        // Log a custom analytics event for scene completion
+        Analytics.CustomEvent("scene_finished", new Dictionary<string, object>
+        {
+            { "scene_name", sceneName },
+            { "timestamp", System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") }
+        });
+
+        Debug.Log("Logged scene completion for: " + sceneName);
     }
 }
 
