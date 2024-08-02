@@ -7,11 +7,12 @@ TagManager:
   - Ground
   - ExampleCharacter
   - Wall
+  - RespawnTrigger
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Grab
   - Water
   - UI
   - 
