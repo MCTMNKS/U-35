@@ -337,13 +337,23 @@ Bunlara ek olarak, oyunumuza ilişkin Analytics Dashboard bu şekildedir: (Ana m
 
 #### Tamamlanan İşler: 
 Kullanıcı hikayeleri ve görevler, Slack platformunda yer alan görevlerin içinde bulunuyor. Bu dokümantasyonda, son sprintte tamamlanan görevler belirtilecek. Bu sprintte en başta yapılması planlanan 
-   XXXX
+  - son seviye olan Dungeons seviyesinin eklenmesi
+  - UI/UX tamamlanması
+  - can sistemi eklenmesi
+  - spawn pointler vs. gibi eksiklerin tamamlanması
+  - seslerin eklenmesi
+  - karakter değiştirme ekranının eklenmesi
+  - aksiyon mekaniğinin eklenmesi (saldırı ve düşman mekaniği)
      
-görevleri tamamlandı ya da bir kısmı tamamlandı. Sprint sonunda istenen mekanikler taski eksik kaldı ancak tamamlanamayan puanlar yerine inventory sistemi gibi diğer görevler -backlog üzerinden de görülebileceği gibi- tamamlandı ve puan açığı kapatıldı.
+görevlerinden değişikliğe gidilen hepsi tamamlandı. Developerlardan bir tanesi son sprintte görevine yerine getiremediği için aksiyon mekaniği eklenemedi, fakat Product Owner yeni görevler ekleyip bunları yerine getirmesiyle proje tamamlandı. (Ekstra ara sahne eklenmesi, planların dışında olan Game Analytics eklendi, var olan düşmanın entegre edilmesi görevleri eklendi ve tamamlandı.) Sprint sonunda istenen mekanikler taski eksik kaldı ancak tamamlanamayan puanlar yerine inventory sistemi gibi diğer görevler -backlog üzerinden de görülebileceği gibi- tamamlandı ve puan açığı kapatıldı.
 
 Bahsi geçen tamamlanan işlerin, Product Owner’ın kabul kriterlerine göre durumu şu şekildedir:
- 
-  XXXX
+ - Dungeons seviyesi: Oynanışın demo olması sebebiyle bazı anahtarlar kapının yanına yerleştirildi. Ancak bu bölümler yine de oynanabilir seviyelerdir. (Sahnenin içinde 2 tane Dungeons seviyesi bulunuyor.)
+ - UI/UX: Bu görev yerine getirildi. Full HD çözünürlük için sorunsuz bir şekilde entegresi sağlandı ancak geniş ekran çözünürlükler için düzenlenmesi gerekmektedir.
+ - Game Analytics: Sorunsuz bir şekilde çalışıyor. Kabul kriterleri karşılanıyor.
+ - Can sistemi: Herhangi bir bug yok, game over ekranına yönlendirmeyi gerçekleştiriyor. Renkleri seviyelere uygun bir biçimde tasarlandı.
+ - Spawn pointler: Her spawn point atandı.
+Level design sorunsuz bir şekilde, hikayeye uygun biçimde işlenmiştir. 
   
 #### Gösterim:
 Sprint esnasında takım üyeleri; Discord platformu aracılığıyla, takım toplantılarında ve Sprint Review esnasında diğer takım üyelerini oyunun güncel durumları ile alakalı bilgilendirmiştir. Sprint sonunda oyunun güncel durumu, ilgili alt başlık altında -Ürün Durumu- ekran görüntüleri ile yer almaktadır. 
@@ -360,7 +370,7 @@ Sprint esnasında, bazı görevlerin tamamlanması esnasında çeşitli engeller
 Bu sprint, projenin son sprintidir. Dolayısıyla ilerleyen zamanlar için herhangi bir karar alınmamıştır.
 
 #### Geri Bildirim: 
-XXXX
+Oyunun level dizayn, ortam tasarımı, hikaye, UI tasarım, ses ve benzeri açısından kabul kriterlerine uygun tamamlanması Product Owner'ı memnun etmiştir. Ancak takımdaki üyelerin kişisel yoğunlukları ve bazılarının hiç dönüş yapmaması geliştirme sürecinde sıkıntılar yarattı. Ancak yine de ürün zamanında tamamlanıp teslim edilmiştir. 
 
 ### •Sprint Retrospective:
 #### İyi Gidenler:
