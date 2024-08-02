@@ -353,7 +353,7 @@ Kişisel yoğunluklar, takım içi iletişim ve koordinasyon problemleri, karş�
 
 #### Engeller: 
 Sprint esnasında, bazı görevlerin tamamlanması esnasında çeşitli engellerle karşılaşılmıştır ve aşağıda listelenen durumlar yaşanmıştır.
- - Son sprint'te ekipte 2 takım üyesi developer olarak çalıştı, dolayısıyla oyunun teknik açıdan tamamlanması beklenenden ve daha önce tamamlanan sprintlerden daha uzun zaman aldı.
+ - Son sprint'te ekipte -developer arkadaşlarımızdan Mecit'in kişisel bir sebepten dolayı sprint esnasında proje geliştirme sürecine katılım sağlayamaması sebebi ile- 2 takım üyesi developer olarak çalıştı, dolayısıyla oyunun teknik açıdan tamamlanması beklenenden ve daha önce tamamlanan sprintlerden daha uzun zaman aldı.
  -  Oyunun son halinin GitHub'a yüklenmesi, daha önceden tamamlanan tasklerin birbirlerine entegresi zaman aldı.
  
 #### Gelecek Sprint İçin: 
@@ -376,5 +376,7 @@ XXXX
 Tamamladığımız sprinti takip eden bir diğeri daha olmadığı için gelecek sprinte dair iyileştirilecek noktalar belirlenmemiştir. Ancak projenin genelini incelediğimizde, takım içinde düzenli ve sık iletişim kurulması iyileştirilmesi gereken noktalar arasında öne çıkmaktadır.
 
 ### •Diğer Notlar:
-Ekleyeceğimiz bir durum veya not yoktur.
+Proje esnasında geliştirilen ancak oyunda kullanılmayan animasyonlara ve kodlarına buradan ulaşabilirsiniz: 
+
+[Kullanılmayan Animasyonlar](https://drive.google.com/file/d/10HAmRX9VY_AAEPCS13aCG2J0n9TJppGQ/view?usp=share_link)
 
