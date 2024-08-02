@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb37a5e4810a7744a6b9d1f88712c1d, type: 3}
+  m_Name: Artifact
+  m_EditorClassIdentifier: 
+  type: 2
+  itemName: Purple Artifact
+  itemPerSlot: 1
+  icon: {fileID: 21300000, guid: bb6544c99ba5c9c4094406bf1e500183, type: 3}
+  prefab: {fileID: 1634496576701476001, guid: 28c079458127a6247acb88c7881ed45e, type: 3}
+  itemInformation: 'A purple artifact. I should place this on the purple altar to
+    open the main gate. I''m getting closer! '

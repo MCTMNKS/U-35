@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &684522007542353840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7283297158967120137}
+  - component: {fileID: 511185911908156924}
+  m_Layer: 0
+  m_Name: FinalGateController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7283297158967120137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684522007542353840}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.84138, y: 21.338776, z: -6.575896}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &511185911908156924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684522007542353840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3211fc758f9177c4798f527cf7f69ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToGoDown:
+  - {fileID: 2479063086884954485, guid: f8f42218dd2690642abc433ef4cf9515, type: 3}
+  - {fileID: 524435521534862531, guid: 349c05ac736a7394987f81190cb532d1, type: 3}
+  - {fileID: 2938828921978864537, guid: e8a53c87c61c8264794c212fc3e69be2, type: 3}
+  - {fileID: 2877611465244378492, guid: afd6f10bf65189c40a344644b6ded2b6, type: 3}
+  - {fileID: 7722411099250453702, guid: c4bcd78ea8321c243be847247472e2a3, type: 3}
+  - {fileID: 7014342513217155351, guid: 5225af51f09e3e2409a16c62f06794e9, type: 3}
+  - {fileID: 1652556009087870041, guid: 66af52da6a420af46bf798eea26f89bf, type: 3}
+  - {fileID: 8582316951198085964, guid: fbdef942c51b365429d98fa8aba221e7, type: 3}
+  objectsToGoUp:
+  - {fileID: 4455061262363914779, guid: a010aeeaa66659c48874535e1d20fd01, type: 3}
+  - {fileID: 3825869804584311311, guid: a28caf9ceb82ae84fbd4be54a65436b3, type: 3}
+  - {fileID: 3200576903491715231, guid: 60b17687da3b4fb4e9a511b362631850, type: 3}
+  - {fileID: 8235528645012612118, guid: 349414eabdab4ec44bdbccb9432d127c, type: 3}
+  - {fileID: 3641304837474190335, guid: 297f03c2994a2614fa02e1c44bb363d9, type: 3}
+  - {fileID: 1828228340420288655, guid: 70d94fe9be73e0043a943471df0b9bcf, type: 3}
+  - {fileID: 8370395188896674741, guid: 19edc2846ba847d478e1d5b23b3ad091, type: 3}
+  - {fileID: 3896860436517993517, guid: 73d14257bdeba6549b619ec1587b02a8, type: 3}
+  gateOpenSound: {fileID: 6047129917105177185, guid: afd6f10bf65189c40a344644b6ded2b6, type: 3}

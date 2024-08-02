@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f427266443dd94264a4bbf81ec0c4329, type: 3}
   m_Name: EvilAtlasT3
   m_EditorClassIdentifier: 
-  speakerName: A t la s?
+  speakerName: Atlas(?)
   npcPortrait: {fileID: 21300000, guid: 5d91f4686caf87d429a431702debc087, type: 3}
   dialougueSound: {fileID: 0}
   paragpraphs:

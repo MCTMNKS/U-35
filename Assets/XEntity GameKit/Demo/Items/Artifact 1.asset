@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb37a5e4810a7744a6b9d1f88712c1d, type: 3}
+  m_Name: Artifact 1
+  m_EditorClassIdentifier: 
+  type: 2
+  itemName: Red Artifact
+  itemPerSlot: 1
+  icon: {fileID: 21300000, guid: 8f55f74b16bd7f04a8a1628a0488edfa, type: 3}
+  prefab: {fileID: 1634496576701476001, guid: f143146b0b2e8bb4a8ba55954e8ead17, type: 3}
+  itemInformation: 'A red artifact. I should place this on the red altar to open
+    the main gate. Just wait for me Karian! '
