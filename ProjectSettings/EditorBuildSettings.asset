@@ -15,8 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Mountains.unity
     guid: 3b3b2255e321f1f47b5155bd291cc9bd
   - enabled: 1
+    path: Assets/DreamState.unity
+    guid: 08e6b17eb11331b469ddf36598eaaef7
+  - enabled: 1
     path: Assets/Dungeons.unity
     guid: d2021b79b5174e544ba5106ab5eda71a
+  - enabled: 0
+    path: Assets/Ara Sahne.unity
+    guid: 631907a692c9bce4db08d5303c2c319e
   - enabled: 0
     path: Assets/Village.unity
     guid: 49c21577d8fcba049bf2f94ab33e2dc2
