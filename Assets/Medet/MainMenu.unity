@@ -20895,6 +20895,18 @@ PrefabInstance:
       propertyPath: sxfLoop
       value: 
       objectReference: {fileID: 944214013}
+    - target: {fileID: 1155924112019157129, guid: 4d7e0c7f51b87452c8d60f25bd2d2fff, type: 3}
+      propertyPath: resolutions.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155924112019157129, guid: 4d7e0c7f51b87452c8d60f25bd2d2fff, type: 3}
+      propertyPath: resolutions.Array.data[3].vertical
+      value: 1440
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155924112019157129, guid: 4d7e0c7f51b87452c8d60f25bd2d2fff, type: 3}
+      propertyPath: resolutions.Array.data[3].horizontal
+      value: 3440
+      objectReference: {fileID: 0}
     - target: {fileID: 5893049884602249763, guid: 4d7e0c7f51b87452c8d60f25bd2d2fff, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
