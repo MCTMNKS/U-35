@@ -376,6 +376,8 @@ XXXX
 Tamamladığımız sprinti takip eden bir diğeri daha olmadığı için gelecek sprinte dair iyileştirilecek noktalar belirlenmemiştir. Ancak projenin genelini incelediğimizde, takım içinde düzenli ve sık iletişim kurulması iyileştirilmesi gereken noktalar arasında öne çıkmaktadır.
 
 ### •Diğer Notlar:
+Oyun Bootcamp aşamasında olduğundan dolayı bazı bölümler atlanabiliyor. Örneğin Dungeon bölümünde, anahtarlar normal şartlarda dungeonların sonunda da mevut.Ancak jürilerimizin oyunu oynamak istemesi durumu için,oyunun kolaylaşması amacıyla anahtarlar ayrıca "altar"ların olduğu bölüme de eklendi.
+
 Proje esnasında geliştirilen ancak oyunda kullanılmayan animasyonlara ve kodlarına buradan ulaşabilirsiniz: 
 
 [Kullanılmayan Animasyonlar](https://drive.google.com/file/d/10HAmRX9VY_AAEPCS13aCG2J0n9TJppGQ/view?usp=share_link)
